@@ -17,8 +17,8 @@ colum_names = [
 
 
 # Specify the target folder and CSV file name
-TARGET_FOLDER = 'C:\\git\\coffeeML\\coffeeML\\Coffee photos\\target_csv_images' 
-SOURCE_FOLDER = 'C:\\git\\coffeeML\\coffeeML\\Coffee photos\\source_images' 
+TARGET_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'target_csv_images')
+SOURCE_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'source_images')
 CSV_FILE_NAME = 'sample_1.csv'
 
 # Create the full path to the CSV file
@@ -87,6 +87,13 @@ def classify_images(source_folder, csv_file_path):
 
             print(f'is relevant:         yes \\ no	                (1 \\ 0)')
             is_relevant = input(f"enter {file_name} is relevant parameter:")
+
+            if is_relevant == '0':
+                creama = '-1'
+                color_clarity = '-1'
+                presentation = '-1'
+                type_of_cup = '-1'
+                break
             print ("Crema	            yes \\ no	                (1 \\ 0)")
             creama = input(f"enter {file_name} creama parameter:")
             print ("Color& Clarity	    bright \\Brown\\ dark	    (0\\1\\2)")
@@ -97,6 +104,7 @@ def classify_images(source_folder, csv_file_path):
             type_of_cup = input(f"enter {file_name} type of cup parameter:")
             print("="*80)
     
+        # Write the data to the CSV file
         with open(csv_file_path, 'a', newline='') as f:
             writer = csv.writer(f)
             writer.writerow([file_name, creama, color_clarity, presentation, type_of_cup, is_relevant])
