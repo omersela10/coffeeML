@@ -1,0 +1,4 @@
+# Exclude virtual environment directories
+__pycache__/
+GroundingDINO/venv/
+GroundingDINO/weights/
