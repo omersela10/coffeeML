@@ -6,13 +6,15 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 # Define the data to write to the CSV file
 colum_names = [
-    ['image_name', 'crema', 'color_clarity', 'presentation','type_of_cup', "is_relevant"]
+    ['image_name', 'crema', 'color_clarity', 'presentation','type_of_cup', "type_of_coffee", "served_way", "is_relevant"]
 ]
-# Crema	            yes \ no	                (1 \ 0)
-# Color& Clarity	bright \Brown\ dark	        (0\1\2)
-# Presentation	    Beautiful draw (scale)  	(0\1\2)
-# Type of Cup	    Take away \ cup	            (1 \ 0)
-# is_relevant	    yes \ no	                (1 \ 0)
+# Crema	            no \ half \ full                   (0\1\2)
+# Color& Clarity	bright \Brown\ dark (-1 = unknow)  (-1\0\1\2)
+# Presentation	    Beautiful draw (scale)  	       (0\1\2)
+# Type of Cup	    Take away \ home cup \ cup	       (0\1\2)
+# Type of coffee    black \ espresso \ cappuccino      (0\1\2)
+# served way        (scale)                            (0\1\2)
+# is_relevant	    yes \ no	                       (1 \ 0)
 
 
 
@@ -78,10 +80,12 @@ def classify_images(source_folder, csv_file_path):
         color_clarity = ""
         presentation = ""
         type_of_cup = ""
+        type_of_coffee = ""
+        served_way = ""
         is_relevant = ""
 
         # get valid user input for each image 
-        while not re.match(r'[0-1]', creama) or not re.match(r'[0-2]', color_clarity) or not re.match(r'[0-2]', presentation) or not re.match(r'[0-1]', type_of_cup) or not re.match(r'[0-1]', is_relevant):
+        while not re.match(r'[0-2]', creama) or not re.match(r'-1|0|1|2', color_clarity) or not re.match(r'[0-2]', presentation) or not re.match(r'[0-2]', type_of_cup) or not re.match(r'[0-2]', type_of_coffee)or not re.match(r'[0-2]',served_way)or not re.match(r'[0-1]', is_relevant):
             print("="*80)
             print(f'file name: {file_name}/n')
 
@@ -93,8 +97,10 @@ def classify_images(source_folder, csv_file_path):
                 color_clarity = '-1'
                 presentation = '-1'
                 type_of_cup = '-1'
+                type_of_coffee = '-1'
+                served_way = '-1'
                 break
-            print ("Crema	            yes \\ no	                (1 \\ 0)")
+            print ("Crema	            yes \\ no	                (1\\0\\2)")
             creama = input(f"enter {file_name} creama parameter:")
             print ("Color& Clarity	    bright \\Brown\\ dark	    (0\\1\\2)")
             color_clarity = input(f"enter {file_name} color clarity parameter:")
@@ -102,13 +108,17 @@ def classify_images(source_folder, csv_file_path):
             presentation = input(f"enter {file_name} presentation parameter:")
             print ("Type of Cup	        Take away \\ cup            (1 \\ 0)")
             type_of_cup = input(f"enter {file_name} type of cup parameter:")
+            print ("Type of coffee	    black \\ espresso \\ cappuccino (0\\1\\2)")
+            type_of_coffee = input(f"enter {file_name} type of coffee parameter:")
+            print ("served way	        (scale)                     (0\\1\\2)")
+            served_way = input(f"enter {file_name} served way parameter:")
             print("="*80)
     
         # Write the data to the CSV file
         with open(csv_file_path, 'a', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow([file_name, creama, color_clarity, presentation, type_of_cup, is_relevant])
-            print(file_name, creama, color_clarity, presentation, type_of_cup)  
+            writer.writerow([file_name, creama, color_clarity, presentation, type_of_cup, type_of_coffee, served_way, is_relevant])
+            print(file_name, creama, color_clarity, presentation, type_of_cup, type_of_coffee, served_way, is_relevant)  
     
 
     
