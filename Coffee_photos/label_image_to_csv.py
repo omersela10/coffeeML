@@ -100,17 +100,18 @@ def classify_images(source_folder, csv_file_path):
                 type_of_coffee = '-1'
                 served_way = '-1'
                 break
-            print ("Crema	            yes \\ no	                (1\\0\\2)")
+
+            print ("Crema	            no \\ half \\ full                   (0\\1\\2):")
             creama = input(f"enter {file_name} creama parameter:")
-            print ("Color& Clarity	    bright \\Brown\\ dark	    (0\\1\\2)")
+            print ("Color& Clarity	bright \\Brown\\ dark (-1 = unknow)  (-1\\0\\1\\2):")
             color_clarity = input(f"enter {file_name} color clarity parameter:")
             print ("Presentation	    Beautiful draw (scale)      (0\\1\\2)")
             presentation = input(f"enter {file_name} presentation parameter:")
-            print ("Type of Cup	        Take away \\ cup            (1 \\ 0)")
+            print ("Type of Cup	    Take away \\ home cup \\ cup	       (0\\1\\2)")
             type_of_cup = input(f"enter {file_name} type of cup parameter:")
-            print ("Type of coffee	    black \\ espresso \\ cappuccino (0\\1\\2)")
+            print ("Type of coffee    black \\ espresso \\ cappuccino      (0\\1\\2)")
             type_of_coffee = input(f"enter {file_name} type of coffee parameter:")
-            print ("served way	        (scale)                     (0\\1\\2)")
+            print ("served way        (scale)                            (0\\1\\2)")
             served_way = input(f"enter {file_name} served way parameter:")
             print("="*80)
     
