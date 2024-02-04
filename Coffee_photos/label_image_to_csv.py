@@ -19,7 +19,7 @@ colum_names = [
 
 
 # Specify the target folder and CSV file name
-TARGET_FOLDER = os.path.dirname(os.path.abspath(__file__))
+TARGET_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '\\target_csv_images_ahigad'
 SOURCE_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'source_images')
 CSV_FILE_NAME = 'sample_1.csv'
 
@@ -127,11 +127,7 @@ if __name__ == "__main__":
 
     # Open the CSV file for writing
     count = 1
-    name = input("enter ahigad or omer to start the process in the right folder: ").lower()
-    if name == "ahigad":
-        TARGET_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'target_csv_images_ahigad')
-    else:
-        TARGET_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'target_csv_images_omer')
+
         
     while file_exists_in_folder(CSV_FILE_NAME, TARGET_FOLDER):
         count += 1
