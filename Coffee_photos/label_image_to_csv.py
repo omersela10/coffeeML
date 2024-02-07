@@ -19,7 +19,7 @@ colum_names = [
 
 
 # Specify the target folder and CSV file name
-TARGET_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '\\target_csv_images_ahigad'
+TARGET_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'target_cdv_images_omer')
 SOURCE_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)),'source_images')
 CSV_FILE_NAME = 'sample_1.csv'
 
@@ -127,8 +127,6 @@ if __name__ == "__main__":
 
     # Open the CSV file for writing
     count = 1
-
-        
     while file_exists_in_folder(CSV_FILE_NAME, TARGET_FOLDER):
         count += 1
         temp_csv_name = CSV_FILE_NAME.split('_')[0]
