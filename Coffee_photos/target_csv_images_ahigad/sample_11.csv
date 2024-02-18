@@ -1,0 +1,16 @@
+image_name,crema,color_clarity,presentation,type_of_cup,type_of_coffee,served_way,is_relevant
+coffe_image(616),0,2,0,1,0,0,1
+coffe_image(617),0,2,0,1,0,0,1
+coffe_image(618),2,-1,0,2,2,2,1
+coffe_image(619),1,-1,0,1,1,1,1
+coffe_image(620),1,-1,0,2,2,2,1
+coffe_image(621),0,2,0,1,0,1,1
+coffe_image(622),1,2,0,2,0,1,1
+coffe_image(623),1,2,0,2,0,1,1
+coffe_image(624),1,-1,2,2,2,2,1
+coffe_image(625),2,-1,2,2,2,0,1
+coffe_image(626),0,2,0,1,0,0,1
+coffe_image(627),0,2,0,1,0,1,1
+coffe_image(628),2,-1,2,2,2,2,1
+coffe_image(629),2,-1,2,2,2,1,1
+coffe_image(630),2,-1,0,2,2,1,1
