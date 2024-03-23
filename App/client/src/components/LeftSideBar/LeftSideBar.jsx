@@ -28,12 +28,12 @@ const LeftSidebar = ({ activeComponent, setActiveComponent }) => {
       <VStack spacing={4} align="stretch" p={4}>
         <Button
           leftIcon={<BsFillImageFill />}
-          variant={activeComponent === "1" ? "solid" : "outline"}
-          colorScheme={activeComponent === "1" ? "blue" : "gray"}
-          bg={activeComponent === "1" ? activeLeftButton : "gray.100"}
+          variant={activeComponent === "byImage" ? "solid" : "outline"}
+          colorScheme={activeComponent === "byImage" ? "blue" : "gray"}
+          bg={activeComponent === "byImage" ? activeLeftButton : "gray.100"}
           _hover={{ bg: "gray.500" ,color:"white"}}
           justifyContent={"flex-start"}
-          onClick={() => handleComponentChange("1")}
+          onClick={() => handleComponentChange("byImage")}
         >
           <Divider h={"20px"} mr={2} orientation="vertical" />
           Image

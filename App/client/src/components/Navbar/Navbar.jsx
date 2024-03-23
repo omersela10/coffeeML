@@ -9,13 +9,14 @@ const Navbar = () => {
     <Box bg={navbarPrimaryColor} px={4} mb={4}>
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <Box>
-          <img src={logoWhiteNoBG} alt="Logo" style={
-            {
+          <img
+            src={logoWhiteNoBG}
+            alt="Logo"
+            style={{
               height: "50px",
-              marginTop:"2px",
-
-            }
-          }/>
+              marginTop: "2px",
+            }}
+          />
         </Box>{" "}
         <Flex alignItems={"center"}>
           <Link
@@ -23,11 +24,20 @@ const Navbar = () => {
             to="/"
             px={2}
             color="white"
-
+            _hover={{ textDecoration: "none", color: "gray.100" }}
+          >
+            Welcome
+          </Link>
+          <Link
+            as={RouterLink}
+            to="/home"
+            px={2}
+            color="white"
             _hover={{ textDecoration: "none", color: "gray.100" }}
           >
             Home
           </Link>
+
           <Link
             as={RouterLink}
             to="/about"

@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import { bgPrimaryColor, borderRadius } from '../../assets/theme';
 import LeftSidebar from '../LeftSideBar/LeftSideBar';
+import ByImageContainer from '../ByImage/ByImageContainer';
 
 const Homepage = () => {
-  const [activeComponent, setActiveComponent] = useState('1');
+  const [activeComponent, setActiveComponent] = useState('byImage');
 
   const renderActiveComponent = () => {
     switch (activeComponent) {
-      case '1':
-        return <h1>1</h1>;
+      case 'byImage':
+        return <ByImageContainer />;
       case '2':
         return <h1>2</h1>;
       case '3':
