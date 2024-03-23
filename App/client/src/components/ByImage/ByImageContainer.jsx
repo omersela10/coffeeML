@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Text, VStack, useToast, Center, Image, Input } from '@chakra-ui/react';
+import { APIBASEURL } from '../../assets/ApiManager';
 
 const ByImageContainer = () => {
     const [image, setImage] = useState(null);
@@ -15,17 +16,50 @@ const ByImageContainer = () => {
         }
     };
 
-    const handleSubmit = () => {
-        // Handle the image upload or any other process here
-        toast({
-            title: "Image uploaded.",
-            description: "Your image has been uploaded successfully.",
-            status: "success",
-            duration: 5000,
-            isClosable: true,
-        });
-    };
+    const handleSubmit = async () => {
+        if (!image) return;
+    
+        const formData = new FormData();
+        formData.append('file', image);
+    
+        try {
+            const response = await fetch(APIBASEURL+'/upload', { // Make sure to adjust the URL if necessary
+                method: 'POST',
 
+                body: formData,
+            });
+    
+            const result = await response.json();
+    
+            if (response.ok) {
+                toast({
+                    title: "Image uploaded.",
+                    description: result.message,
+                    status: "success",
+                    duration: 5000,
+                    isClosable: true,
+                });
+            } else {
+                toast({
+                    title: "Upload failed.",
+                    description: result.message,
+                    status: "error",
+                    duration: 5000,
+                    isClosable: true,
+                });
+            }
+        } catch (error) {
+            console.error('Error uploading the image:', error);
+            toast({
+                title: "Upload error.",
+                description: "An unexpected error occurred.",
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+        }
+    };
+    
     return (
         <VStack
             spacing={4}
