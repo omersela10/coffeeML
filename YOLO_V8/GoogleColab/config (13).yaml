@@ -1,0 +1,7 @@
+train: Dataset/train/images
+val: Dataset/validation/images
+test: Dataset/test/images
+
+# Define classes
+names:
+  0: Coffee_cup
