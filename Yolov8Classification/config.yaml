@@ -1,0 +1,5 @@
+train: /content/drive/My Drive/Colab Notebooks/YOLOV8 Classification/dataset/images/train
+val: /content/drive/My Drive/Colab Notebooks/YOLOV8 Classification/dataset/images/val
+
+nc: 3
+names: ['Cappuccino', 'Espresso', 'Black']
