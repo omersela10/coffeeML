@@ -1,0 +1,6 @@
+train: /content/drive/My Drive/Colab Notebooks/YOLOV8 Classification/type_of_cup_Dataset/train/images
+val: /content/drive/My Drive/Colab Notebooks/YOLOV8 Classification/type_of_cup_Dataset/val/images
+test: /content/drive/My Drive/Colab Notebooks/YOLOV8 Classification/type_of_cup_Dataset/test/images
+
+nc: 2
+names: ['TakeAway', 'Cup']
