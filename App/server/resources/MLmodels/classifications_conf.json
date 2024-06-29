@@ -1,0 +1,42 @@
+{
+    "clasifications": 
+    [
+        {
+            "classification_name": "coffe_type",
+            "model_path": "resources\\MLmodels\\coffee_type_classification\\coffee_type_classification_v1.pt",
+            "class_labels": [
+                "Cappuccino",
+                "Espresso",
+                "Black_Coffee"
+            ]
+        },
+        {
+            "classification_name": "crema",
+            "model_path": "resources\\MLmodels\\crema_classification\\crema_classification_v1.pt",
+            "class_labels": [
+                "no_crema",
+                "crema"
+            ]
+        },
+        {
+            "classification_name": "served_way",
+            "model_path": "resources\\MLmodels\\served_way_classification\\served_way_classification_v1.pt",
+            "class_labels": [
+                "No_Served_Way",
+                "Yes_Served_Way"
+            ]
+        },
+        {
+            "classification_name": "type_of_cup",
+            "model_path": "resources\\MLmodels\\type_of_cup_classification\\type_of_cup_classification_v1.pt",
+            "class_labels": [
+                "TakeAWay",
+                "Cup"
+            ]
+        }
+    ],
+    "coffee_detection": 
+    {
+        "model_path": "resources\\MLmodels\\object_detection\\object_detection_v1.pt"
+    }
+}
