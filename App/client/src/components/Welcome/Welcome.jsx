@@ -1,75 +1,94 @@
-import React from "react";
-import {
-  Grid,
-  GridItem,
-  Box,
-  Heading,
-  Text,
-  Image,
-  Button,
-} from "@chakra-ui/react";
-import logo from "../../../public/Appicon.png";
-import { bgPrimaryColor, borderRadius } from "../../assets/theme";
-import coffeVideo from '../../assets/videos/coffeVideo.mp4'
+import React, { useState, useEffect } from "react";
+import { Grid, GridItem, Box } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { borderRadius } from "../../assets/theme";
+import coffeVideo from '../../assets/videos/coffeVideo.mp4';
 import { useNavigate } from "react-router-dom";
+import CoffeeBeanBackground from "../CoffeeBeanBackground/CoffeeBeanBackground";
+import WelcomeText from "./components/WelcomeText";
+
+const MotionBox = motion(Box);
 
 const Welcome = () => {
-    const navigation = useNavigate();
+  const [showContent, setShowContent] = useState(false);
+  const navigate = useNavigate();
 
-    const handleGetStarted = () => {
-        navigation("/home");
-    }
-return (
-    <Grid
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={6}
-        justifyContent="center"
-        p={4}
-        h={"85vh"}
-        m={4}
-        borderRadius={borderRadius}
-        bg={bgPrimaryColor}
-    >
-        <GridItem m={4}>
-            <Box textAlign={{ base: "center", md: "left" }}>
-                <Image src={logo} alt="Logo" mb={4} h={100} w={100} />
-                <Heading mb={2}>Welcome to Coffee-ML</Heading>
-                <Text mb={6}>
-                    Coffee-ML is revolutionizing the way we evaluate coffee quality. Our
-                    cutting-edge technology harnesses the power of machine learning to
-                    analyze the intricate details of the coffee, unveiling their true
-                    potential like never before.
-                    <br />
-                    <br />
-                    With our advanced image analysis algorithms, we can precisely assess
-                    the color, texture, and even the subtle nuances that define a truly
-                    exceptional coffee experience. 
-                    <br />
-                </Text>
-                <Text mb={4}>
-                    <strong>Why risk your enjoynment? Check your coffee first! </strong>
-                </Text>
-                <Button colorScheme="teal" size="lg" onClick={
-                    handleGetStarted
-                }>
-                    Get Started
-                </Button>
-            </Box>
-        </GridItem>
-        <GridItem m={4}>
-        <GridItem m={4}>
-  <video
-    src={coffeVideo}
-    alt="Welcome Video"
-    autoPlay
-    loop
-    muted
-    style={{ borderRadius: borderRadius }}
-  />
-</GridItem>
-        </GridItem>
-    </Grid>
-);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleGetStarted = () => {
+    navigate("/home");
+  }
+
+  const heading = "Welcome to Coffee-ML";
+  const description = "Coffee-ML is revolutionizing the way we evaluate coffee quality. Our cutting-edge technology harnesses the power of machine learning to analyze the intricate details of the coffee, unveiling their true potential like never before.";
+  const bulletPoints = [
+    "Advanced image analysis algorithms",
+    "Precise assessment of color and texture",
+    "Identify subtle nuances in coffee",
+    "Ensures a truly exceptional coffee experience"
+  ];
+  const strongText = "Why risk your enjoyment? Check your coffee first!";
+  const buttonText = "Get Started";
+
+  return (
+    <>
+      <CoffeeBeanBackground />
+      {showContent && (
+        <MotionBox
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          height="90vh"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Grid
+            templateColumns={{ base: "1fr" }}
+            gap={6}
+            justifyContent="center"
+            alignItems="center"
+            p={4}
+            borderRadius={borderRadius}
+            bg="rgba(255,246,231,0.2)"
+            backdropFilter="blur(10px)"
+            boxShadow="0 4px 30px rgba(0, 0, 0, 0.1)"
+            textAlign="center"
+            w="75%"
+            margin="auto"
+          >
+            <GridItem>
+              <WelcomeText 
+                heading={heading}
+                description={description}
+                bulletPoints={bulletPoints}
+                strongText={strongText}
+                buttonText={buttonText}
+                handleButtonClick={handleGetStarted}
+              />
+            </GridItem>
+            <GridItem>
+              <Box width="100%" maxWidth="600px" mx="auto">
+                <video
+                  src={coffeVideo}
+                  alt="Welcome Video"
+                  autoPlay
+                  loop
+                  muted
+                  style={{ borderRadius: borderRadius, width: '100%' }}
+                />
+              </Box>
+            </GridItem>
+          </Grid>
+        </MotionBox>
+      )}
+    </>
+  );
 };
 
 export default Welcome;

@@ -26,7 +26,7 @@ const Homepage = () => {
         activeComponent={activeComponent}
         setActiveComponent={setActiveComponent}
       />
-      <Box flex={1} bgColor={bgPrimaryColor} h="100%"  borderRadius={borderRadius} mr={4}>
+      <Box flex={1} bgColor={bgPrimaryColor} h="100%"  borderRadius={borderRadius} mr={4} >
         {renderActiveComponent()}
       </Box>
     </Flex>

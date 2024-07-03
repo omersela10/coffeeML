@@ -1,4 +1,4 @@
-const navbarPrimaryColor = 'gray.800'
+const navbarPrimaryColor = 'gray.700'
 const bgPrimaryColor = 'gray.100'
 const borderRadius = 10
 const activeLeftButton = 'gray.600'
