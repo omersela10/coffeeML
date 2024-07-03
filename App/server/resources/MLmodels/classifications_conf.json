@@ -5,9 +5,9 @@
             "classification_name": "coffe_type",
             "model_path": "resources\\MLmodels\\coffee_type_classification\\coffee_type_classification_v1.pt",
             "class_labels": [
-                "Cappuccino",
-                "Espresso",
-                "Black_Coffee"
+                "cappuccino",
+                "espresso",
+                "black_coffee"
             ]
         },
         {
@@ -22,16 +22,16 @@
             "classification_name": "served_way",
             "model_path": "resources\\MLmodels\\served_way_classification\\served_way_classification_v1.pt",
             "class_labels": [
-                "No_Served_Way",
-                "Yes_Served_Way"
+                "no_served_way",
+                "yes_served_way"
             ]
         },
         {
             "classification_name": "type_of_cup",
             "model_path": "resources\\MLmodels\\type_of_cup_classification\\type_of_cup_classification_v1.pt",
             "class_labels": [
-                "TakeAWay",
-                "Cup"
+                "take_away_cup",
+                "cup"
             ]
         }
     ],
