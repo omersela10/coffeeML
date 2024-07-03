@@ -5,6 +5,7 @@ import { APIBASEURL } from '../../assets/ApiManager';
 const ByImageContainer = () => {
     const [image, setImage] = useState(null);
     const [imageUrl, setImageUrl] = useState('');
+    const [responseData, setResponseData] = useState(null); // State for storing the server response
     const toast = useToast();
 
     const handleImageChange = (e) => {
@@ -18,20 +19,20 @@ const ByImageContainer = () => {
 
     const handleSubmit = async () => {
         if (!image) return;
-    
+
         const formData = new FormData();
         formData.append('file', image);
-    
-        try {
-            const response = await fetch(APIBASEURL+'/upload', { // Make sure to adjust the URL if necessary
-                method: 'POST',
 
+        try {
+            const response = await fetch(APIBASEURL + '/upload', { // Make sure to adjust the URL if necessary
+                method: 'POST',
                 body: formData,
             });
-    
+
             const result = await response.json();
-    
+
             if (response.ok) {
+                setResponseData(result); // Update the state with the response data
                 toast({
                     title: "Image uploaded.",
                     description: result.message,
@@ -59,7 +60,7 @@ const ByImageContainer = () => {
             });
         }
     };
-    
+
     return (
         <VStack
             spacing={4}
@@ -104,9 +105,23 @@ const ByImageContainer = () => {
                 onClick={handleSubmit}
                 mb={4}
             >
-
                 Upload Image
             </Button>
+            {responseData && (
+                <Center
+                    w="full"
+                    p={4}
+                    borderWidth="1px"
+                    borderColor="gray.300"
+                    borderRadius="md"
+                    mt={4}
+                    bg="gray.50"
+                >
+                    <Text as="pre" fontSize="md" textAlign="left">
+                        {JSON.stringify(responseData, null, 2)}
+                    </Text>
+                </Center>
+            )}
         </VStack>
     );
 };

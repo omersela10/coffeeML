@@ -199,38 +199,37 @@ class ModelsWrapper:
 
 
 
-#main code:
+# main code:
+# json_file_path = "resources\MLmodels\classifications_conf.json"
+# models_wrapper = ModelsWrapper(json_file_path)
+# image_paths = [
+#                 r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(8).jpg",
+#                 r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(10).jpg",
+#                 r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(4)_augmented_1.jpg",
+#                 r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(28)_augmented_11.jpg",
+#                 r"C:\\Users\\omers\\OneDrive\\Desktop\\coffe1111.png",
+#                 r"C:\\Users\\omers\\OneDrive\\Desktop\\coffee6.png",
+#                 r"C:\\Users\\omers\\OneDrive\\Desktop\\coffee7.png",
+#                 r"C:\\Users\omers\\OneDrive\\Desktop\\food1.png" 
+#                ]
+# classifications_to_predict = [
+#     "coffe_type",
+#     "crema", 
+#     "served_way",
+#     "type_of_cup",
+#     "sdfdsf"
+# ]
 
-json_file_path = "resources\MLmodels\classifications_conf.json"
-models_wrapper = ModelsWrapper(json_file_path)
-image_paths = [
-                r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(8).jpg",
-                r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(10).jpg",
-                r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(4)_augmented_1.jpg",
-                r"C:\\git\\coffee_ml\\coffeeML\\Coffee_photos\\augmented_images_folder\\coffe_image(28)_augmented_11.jpg",
-                r"C:\\Users\\omers\\OneDrive\\Desktop\\coffe1111.png",
-                r"C:\\Users\\omers\\OneDrive\\Desktop\\coffee6.png",
-                r"C:\\Users\\omers\\OneDrive\\Desktop\\coffee7.png",
-                r"C:\\Users\omers\\OneDrive\\Desktop\\food1.png" 
-               ]
-classifications_to_predict = [
-    "coffe_type",
-    "crema", 
-    "served_way",
-    "type_of_cup",
-    "sdfdsf"
-]
+# results = {}
+# for image_path in image_paths:
+#     print(f"Performing predictions on image: {image_path}")
+#     predictions = models_wrapper.predict_with_detect(image_path, classifications_to_predict)
+#     results[image_path] = predictions
 
-results = {}
-for image_path in image_paths:
-    print(f"Performing predictions on image: {image_path}")
-    predictions = models_wrapper.predict_with_detect(image_path, classifications_to_predict)
-    results[image_path] = predictions
-
-print("Results:")
-for image_path, predictions in results.items():
-    print("="*50)
-    print(f"Image: {image_path}")
-    print(predictions)
-    print("="*50)
-    print("")
+# print("Results:")
+# for image_path, predictions in results.items():
+#     print("="*50)
+#     print(f"Image: {image_path}")
+#     print(predictions)
+#     print("="*50)
+#     print("")
