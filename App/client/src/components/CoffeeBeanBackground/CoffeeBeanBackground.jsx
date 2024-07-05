@@ -6,6 +6,8 @@ import coffee2 from '../../assets/images/coffee2.png';
 import coffee3 from '../../assets/images/coffee3.png';
 import coffee4 from '../../assets/images/coffee4.png';
 import coffee5 from '../../assets/images/coffee5.png';
+import coffee6 from '../../assets/images/coffee6.png';
+import coffee7 from '../../assets/images/coffee7.png';
 
 const MotionBox = motion(Box);
 
@@ -13,12 +15,38 @@ const CoffeeBeanBackground = () => {
   const controls = useAnimation();
 
   useEffect(() => {
-    controls.start((i) => ({
-      opacity: 1,
-      y: 0,
-      x: 0,
-      transition: { delay: i * 0.2, duration: 0.8 },
-    }));
+    const animateSequence = async () => {
+      await controls.start((i) => ({
+        opacity: 1,
+        y: 0,
+        x: 0,
+        transition: { delay: i * 0.2, duration: 0.8 },
+      }));
+
+      // Blur coffee1 and coffee4 after initial animation
+      await controls.start((i) => {
+        if (i === 0 || i === 2) {
+          return {
+            filter: 'blur(4px)',
+            transition: { delay: 0.2, duration: 1 }
+          };
+        }
+        return {};
+      });
+
+      // Fade in coffee7 at the end
+      controls.start((i) => {
+        if (i === 6) { // Assuming coffee7 is at index 6
+          return {
+            opacity: 1,
+            transition: { delay: 2, duration: 1 } // Adjust delay as needed
+          };
+        }
+        return {};
+      });
+    };
+
+    animateSequence();
   }, [controls]);
 
   const imageVariants = [
@@ -27,11 +55,9 @@ const CoffeeBeanBackground = () => {
     { initial: { x: '100%', opacity: 0 }, animate: controls, src: coffee3 },
     { initial: { y: '-100%', opacity: 0 }, animate: controls, src: coffee4 },
     { initial: { y: '100%', opacity: 0 }, animate: controls, src: coffee5 },
+    { initial: { y: '-100%', opacity: 0 }, animate: controls, src: coffee6 },
+    { initial: { opacity: 0 }, animate: controls, src: coffee7 },
   ];
-
-  const blurVariants = {
-    blurred: { filter: 'blur(30px)', transition: { delay: 1, duration: 1 } },
-  };
 
   return (
     <Box position="fixed" width="100%" height="100vh" top="0" left="0" zIndex="-1" overflow="hidden">
@@ -40,7 +66,7 @@ const CoffeeBeanBackground = () => {
           key={index}
           custom={index}
           initial={variant.initial}
-          animate={{ ...variant.animate, ...blurVariants.blurred }}
+          animate={variant.animate}
           width="100%"
           height="100%"
           position="absolute"
@@ -55,6 +81,7 @@ const CoffeeBeanBackground = () => {
           />
         </MotionBox>
       ))}
+
     </Box>
   );
 };
