@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Button, Text, VStack, useToast, Center, Image, Input } from '@chakra-ui/react';
 import { APIBASEURL } from '../../assets/ApiManager';
+import { BiCoffee } from 'react-icons/bi';
+import CoffeeLoader from '../shared_components/CoffeeLoader';
 
 const ByImageContainer = () => {
     const [image, setImage] = useState(null);
     const [imageUrl, setImageUrl] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
     const toast = useToast();
 
     const handleImageChange = (e) => {
@@ -18,19 +21,23 @@ const ByImageContainer = () => {
 
     const handleSubmit = async () => {
         if (!image) return;
-    
+
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 3000);
+
         const formData = new FormData();
         formData.append('file', image);
-    
-        try {
-            const response = await fetch(APIBASEURL+'/upload', { // Make sure to adjust the URL if necessary
-                method: 'POST',
 
+        try {
+            const response = await fetch(APIBASEURL + '/upload', { // Make sure to adjust the URL if necessary
+                method: 'POST',
                 body: formData,
             });
-    
+
             const result = await response.json();
-    
+
             if (response.ok) {
                 toast({
                     title: "Image uploaded.",
@@ -59,15 +66,15 @@ const ByImageContainer = () => {
             });
         }
     };
-    
+
     return (
         <VStack
             spacing={4}
             h="100%"
-            justify="space-between" // This ensures spacing between items, pushing the button to the bottom
+            justify="space-between"
         >
-            <Text as="h1" fontSize="2xl" fontWeight="bold" textAlign="center">
-                By Image
+            <Text as="h1" fontSize="2xl" fontWeight="bold" textAlign="center" m={4} color="gray.700">
+                Rate your coffee by image
             </Text>
             <Center
                 w="60%"
@@ -81,30 +88,36 @@ const ByImageContainer = () => {
                 position="relative"
                 overflow="hidden"
             >
-                {imageUrl ? (
-                    <Image src={imageUrl} maxW="full" maxH="full" alt="Uploaded image preview" />
+                {isLoading ? (
+                    <CoffeeLoader />
                 ) : (
-                    <Text color="gray.500">Click to upload image</Text>
+                    <>
+                        {imageUrl ? (
+                            <Image src={imageUrl} maxW="full" maxH="full" alt="Uploaded image preview" />
+                        ) : (
+                            <Text color="gray.500">Click to upload image</Text>
+                        )}
+                        <Input
+                            type="file"
+                            accept="image/*"
+                            onChange={handleImageChange}
+                            opacity="0"
+                            position="absolute"
+                            w="full"
+                            h="full"
+                            cursor="pointer"
+                        />
+                    </>
                 )}
-                <Input
-                    type="file"
-                    accept="image/*"
-                    onChange={handleImageChange}
-                    opacity="0"
-                    position="absolute"
-                    w="full"
-                    h="full"
-                    cursor="pointer"
-                />
             </Center>
             <Button
                 colorScheme="blue"
                 variant="outline"
-                isDisabled={!image}
+                isDisabled={!image || isLoading}
                 onClick={handleSubmit}
                 mb={4}
+                rightIcon={<BiCoffee />}
             >
-
                 Upload Image
             </Button>
         </VStack>

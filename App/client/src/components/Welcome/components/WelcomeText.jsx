@@ -11,7 +11,8 @@ const WelcomeText = ({ heading, subheading }) => {
       fontWeight: "bold",
     },
     description: {
-      colors: ["#8B4513", "#E1B88B"],
+      colors: ["#6F3D12", "#CFAE7D"], 
+
       fontSize: "xl",
       fontFamily: "Plus Jakarta Sans Variable",
       fontWeight: "100",

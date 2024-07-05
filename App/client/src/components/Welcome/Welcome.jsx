@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import CoffeeBeanBackground from "../CoffeeBeanBackground/CoffeeBeanBackground";
 import WelcomeText from "./components/WelcomeText";
+import { BiSolidCoffeeBean } from "react-icons/bi";
 
 const MotionBox = motion(Box);
 
@@ -47,12 +48,13 @@ const Welcome = () => {
               variant={"outline"}
               borderColor="#8B4513"
               color="#8B4513"
-              _hover={{ bg: "#8B4513", color: "white" }}
+              _hover={{ bgGradient: "linear(to-r, #8B4513, #BA6A31)" , color: "white" , borderColor: "transparent"}}
               rounded={"full"}
               px={6}
               py={3}
               fontSize={"md"}
               fontWeight={"light"}
+              rightIcon={<BiSolidCoffeeBean />}
             >
               Get Started Now!
             </Button>

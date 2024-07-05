@@ -6,9 +6,16 @@ import About from './components/About/About';
 import Welcome from './components/Welcome/Welcome';
 
 function App() {
+
+  const links = [
+    { to: "/", label: "Welcome" },
+    { to: "/home", label: "Home" },
+    { to: "/about", label: "About" },
+  ];
+  
   return (
     <>
-      <Navbar />
+      <Navbar links={links} />
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/home" element={<Homepage />} />
