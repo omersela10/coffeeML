@@ -42,9 +42,10 @@ class ClassificationModel:
             results = self.model.predict(image_path, show=False)
             
             # Extract the predicted class with the highest confidence
-            if len(results) > 0 and len(results[0].boxes) > 0:
-                predicted_class_id = int(results[0].boxes[0].cls)
-                return self.class_labels[predicted_class_id]
+            for result in results:
+                if len(result.boxes) > 0:
+                    predicted_class_id = int(result.boxes[0].cls)
+                    return self.class_labels[predicted_class_id]
             else:
                 return "Unknown"  # Return Unknown if no prediction is made
             
