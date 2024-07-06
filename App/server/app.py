@@ -3,8 +3,12 @@ from flask_cors import CORS, cross_origin
 import os
 import time
 from model import ModelsWrapper
+import platform
 
-json_file_path = "resources\MLmodels\classifications_conf.json"
+if platform.system() == "Windows":
+    json_file_path = os.path.join("resources", "MLmodels", "classifications_conf_win.json")
+else:
+    json_file_path = os.path.join("resources", "MLmodels", "classifications_conf_linux.json")
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
