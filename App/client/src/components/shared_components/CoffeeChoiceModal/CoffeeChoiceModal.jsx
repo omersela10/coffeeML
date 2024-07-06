@@ -16,14 +16,16 @@ import {
   VStack,
   Text,
   Box,
+  Flex,
+  Center,
 } from "@chakra-ui/react";
 import { coffeeOptions } from "../../../assets/user_choices";
 import { coffeePrimaryColor, coffeeHoverColor } from "../../../assets/theme";
 import coffeeTypeIcon from "../../../assets/icons/coffee_type.png";
 import cupTypeIcon from "../../../assets/icons/cup_type.png";
-// import cappuccinoImage from "../../../assets/images/cappuccino.png";
-// import blackCoffeeImage from "../../../assets/images/black_coffee.png";
-// import espressoImage from "../../../assets/images/espresso.png";
+import cappuccinoImage from "../../../assets/images/cappuccino.jpg";
+import blackCoffeeImage from "../../../assets/images/black.webp";
+import espressoImage from "../../../assets/images/espresso.jpg";
 
 const CoffeeChoiceModal = ({
   isOpen,
@@ -40,9 +42,9 @@ const CoffeeChoiceModal = ({
   };
 
   const coffeeTypeImages = {
-    cappuccino: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTuDKXbkn3GeIZJJOodadOiGxwsCP6KWCRAvtBCf_eFNowUrFmuaNz7j5UrV7K7nHgr",
-    black: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTuDKXbkn3GeIZJJOodadOiGxwsCP6KWCRAvtBCf_eFNowUrFmuaNz7j5UrV7K7nHgr",
-    espresso: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTuDKXbkn3GeIZJJOodadOiGxwsCP6KWCRAvtBCf_eFNowUrFmuaNz7j5UrV7K7nHgr"
+    cappuccino: cappuccinoImage,
+    espresso: espressoImage,
+    black: blackCoffeeImage,
   };
 
   return (
@@ -64,7 +66,7 @@ const CoffeeChoiceModal = ({
                   <Text>Coffee Type</Text>
                 </HStack>
               </FormLabel>
-              <HStack spacing={4}>
+              <HStack spacing={4} justify="center">
                 {Object.keys(coffeeTypeImages).map((type) => (
                   <Box
                     key={type}
@@ -73,27 +75,36 @@ const CoffeeChoiceModal = ({
                     cursor="pointer"
                     borderRadius="full"
                     overflow="hidden"
-                    boxSize="100px"
-                    borderWidth={userChoices.coffee_type === type ? "2px" : "0px"}
+                    boxSize="120px"
+                    borderWidth={userChoices.coffee_type === type ? "5px" : "0px"}
                     borderColor={userChoices.coffee_type === type ? coffeePrimaryColor : "transparent"}
+                    transition="border-color 0.3s"
                   >
-                    <Image
-                      src={coffeeTypeImages[type]}
-                      alt={type}
-                      filter={userChoices.coffee_type === type ? "none" : "grayscale(100%)"}
-                      transition="filter 0.3s, border-color 0.3s"
-                    />
-                    <Box
-                      position="absolute"
-                      bottom="0"
-                      width="100%"
-                      textAlign="center"
-                      bgGradient="linear(to-t, blackAlpha.800, transparent)"
-                      color="white"
-                      py={1}
-                    >
-                      {type.charAt(0).toUpperCase() + type.slice(1)}
-                    </Box>
+                    <Center boxSize="100%">
+                      <Image
+                        src={coffeeTypeImages[type]}
+                        alt={type}
+                        boxSize="100%"
+                        objectFit="cover"
+                        filter={userChoices.coffee_type === type ? "none" : "grayscale(80%)"}
+                        transition="filter 0.3s"
+                      />
+                      <Box
+                        position="absolute"
+                        bottom="0"
+                        width="100%"
+                        height="100%"
+                        textAlign="center"
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                        bgGradient="linear(to-t, blackAlpha.900, blackAlpha.100)"
+                        color="white"
+                        py={1}
+                      >
+                        {type.charAt(0).toUpperCase() + type.slice(1)}
+                      </Box>
+                    </Center>
                   </Box>
                 ))}
               </HStack>
