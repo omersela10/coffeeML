@@ -56,7 +56,7 @@ const ByImageContainer = ({ userChoices, setUserChoices, onOpen, onClose, isOpen
     formData.append("user_choices", JSON.stringify(userChoices));
 
     try {
-      const response = await fetch(APIBASEURL + "/upload", {
+      const response = await fetch(APIBASEURL +"/upload", {
         method: "POST",
         body: formData,
       });

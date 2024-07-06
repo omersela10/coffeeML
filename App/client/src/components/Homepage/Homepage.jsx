@@ -3,7 +3,7 @@ import { Box, Flex, Button, useDisclosure } from '@chakra-ui/react';
 import { bgPrimaryColor, borderRadius, coffeePrimaryColor } from '../../assets/theme';
 import LeftSidebar from '../LeftSideBar/LeftSideBar';
 import ByImageContainer from '../ByImage/ByImageContainer';
-import ByCoffeeShop from '../ByCoffeeShop/ByCoffeeShop';
+import ByCoffeeShop from '../ByCoffeeShop/ByCoffeeShopContainer';
 import ByLocation from '../ByLocation/ByLocation';
 
 const Homepage = () => {
