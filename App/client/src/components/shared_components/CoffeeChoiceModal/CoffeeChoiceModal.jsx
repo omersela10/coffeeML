@@ -1,5 +1,3 @@
-// src/components/shared_components/CoffeeChoice/CoffeeChoiceModal.js
-
 import React from "react";
 import {
   Modal,
@@ -10,7 +8,6 @@ import {
   ModalBody,
   ModalCloseButton,
   Button,
-  Select,
   FormControl,
   FormLabel,
   HStack,
@@ -18,11 +15,15 @@ import {
   Switch,
   VStack,
   Text,
+  Box,
 } from "@chakra-ui/react";
 import { coffeeOptions } from "../../../assets/user_choices";
 import { coffeePrimaryColor, coffeeHoverColor } from "../../../assets/theme";
 import coffeeTypeIcon from "../../../assets/icons/coffee_type.png";
 import cupTypeIcon from "../../../assets/icons/cup_type.png";
+// import cappuccinoImage from "../../../assets/images/cappuccino.png";
+// import blackCoffeeImage from "../../../assets/images/black_coffee.png";
+// import espressoImage from "../../../assets/images/espresso.png";
 
 const CoffeeChoiceModal = ({
   isOpen,
@@ -36,6 +37,12 @@ const CoffeeChoiceModal = ({
       ...prevChoices,
       [key]: value,
     }));
+  };
+
+  const coffeeTypeImages = {
+    cappuccino: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTuDKXbkn3GeIZJJOodadOiGxwsCP6KWCRAvtBCf_eFNowUrFmuaNz7j5UrV7K7nHgr",
+    black: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTuDKXbkn3GeIZJJOodadOiGxwsCP6KWCRAvtBCf_eFNowUrFmuaNz7j5UrV7K7nHgr",
+    espresso: "https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTuDKXbkn3GeIZJJOodadOiGxwsCP6KWCRAvtBCf_eFNowUrFmuaNz7j5UrV7K7nHgr"
   };
 
   return (
@@ -57,40 +64,41 @@ const CoffeeChoiceModal = ({
                   <Text>Coffee Type</Text>
                 </HStack>
               </FormLabel>
-              <Select
-                value={userChoices.coffee_type}
-                onChange={(e) => handleChange("coffee_type", e.target.value)}
-              >
-                {coffeeOptions.coffee_type.map((option, index) => (
-                  <option key={index} value={option}>
-                    {option}
-                  </option>
+              <HStack spacing={4}>
+                {Object.keys(coffeeTypeImages).map((type) => (
+                  <Box
+                    key={type}
+                    position="relative"
+                    onClick={() => handleChange("coffee_type", type)}
+                    cursor="pointer"
+                    borderRadius="full"
+                    overflow="hidden"
+                    boxSize="100px"
+                    borderWidth={userChoices.coffee_type === type ? "2px" : "0px"}
+                    borderColor={userChoices.coffee_type === type ? coffeePrimaryColor : "transparent"}
+                  >
+                    <Image
+                      src={coffeeTypeImages[type]}
+                      alt={type}
+                      filter={userChoices.coffee_type === type ? "none" : "grayscale(100%)"}
+                      transition="filter 0.3s, border-color 0.3s"
+                    />
+                    <Box
+                      position="absolute"
+                      bottom="0"
+                      width="100%"
+                      textAlign="center"
+                      bgGradient="linear(to-t, blackAlpha.800, transparent)"
+                      color="white"
+                      py={1}
+                    >
+                      {type.charAt(0).toUpperCase() + type.slice(1)}
+                    </Box>
+                  </Box>
                 ))}
-              </Select>
-            </FormControl>
-
-            {/* <FormControl display="flex" alignItems="center">
-              <HStack spacing={4}>
-                <Image src={cremaIcon} boxSize="24px" alt="Crema Icon" />
-                <FormLabel mb="0">Crema</FormLabel>
-                <Switch 
-                  isChecked={userChoices.crema} 
-                  onChange={(e) => handleChange('crema', e.target.checked)} 
-                />
               </HStack>
             </FormControl>
 
-            <FormControl display="flex" alignItems="center">
-              <HStack spacing={4}>
-                <Image src={servedWayIcon} boxSize="24px" alt="Served Way Icon" />
-                <FormLabel mb="0">Served Way</FormLabel>
-                <Switch 
-                  isChecked={userChoices.served_way} 
-                  onChange={(e) => handleChange('served_way', e.target.checked)} 
-                />
-              </HStack>
-            </FormControl>
-*/}
             <FormControl display="flex" alignItems="center">
               <HStack spacing={4}>
                 <Image src={cupTypeIcon} boxSize="24px" alt="Cup Type Icon" />
