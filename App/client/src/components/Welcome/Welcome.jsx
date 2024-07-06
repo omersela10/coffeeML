@@ -1,75 +1,68 @@
-import React from "react";
-import {
-  Grid,
-  GridItem,
-  Box,
-  Heading,
-  Text,
-  Image,
-  Button,
-} from "@chakra-ui/react";
-import logo from "../../../public/Appicon.png";
-import { bgPrimaryColor, borderRadius } from "../../assets/theme";
-import coffeVideo from '../../assets/videos/coffeVideo.mp4'
+import React, { useState, useEffect } from "react";
+import { Box, Button, HStack, VStack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import CoffeeBeanBackground from "../CoffeeBeanBackground/CoffeeBeanBackground";
+import WelcomeText from "./components/WelcomeText";
+import { BiSolidCoffeeBean } from "react-icons/bi";
+
+const MotionBox = motion(Box);
 
 const Welcome = () => {
-    const navigation = useNavigate();
+  const [showContent, setShowContent] = useState(false);
+  const navigate = useNavigate();
 
-    const handleGetStarted = () => {
-        navigation("/home");
-    }
-return (
-    <Grid
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={6}
-        justifyContent="center"
-        p={4}
-        h={"85vh"}
-        m={4}
-        borderRadius={borderRadius}
-        bg={bgPrimaryColor}
-    >
-        <GridItem m={4}>
-            <Box textAlign={{ base: "center", md: "left" }}>
-                <Image src={logo} alt="Logo" mb={4} h={100} w={100} />
-                <Heading mb={2}>Welcome to Coffee-ML</Heading>
-                <Text mb={6}>
-                    Coffee-ML is revolutionizing the way we evaluate coffee quality. Our
-                    cutting-edge technology harnesses the power of machine learning to
-                    analyze the intricate details of the coffee, unveiling their true
-                    potential like never before.
-                    <br />
-                    <br />
-                    With our advanced image analysis algorithms, we can precisely assess
-                    the color, texture, and even the subtle nuances that define a truly
-                    exceptional coffee experience. 
-                    <br />
-                </Text>
-                <Text mb={4}>
-                    <strong>Why risk your enjoynment? Check your coffee first! </strong>
-                </Text>
-                <Button colorScheme="teal" size="lg" onClick={
-                    handleGetStarted
-                }>
-                    Get Started
-                </Button>
-            </Box>
-        </GridItem>
-        <GridItem m={4}>
-        <GridItem m={4}>
-  <video
-    src={coffeVideo}
-    alt="Welcome Video"
-    autoPlay
-    loop
-    muted
-    style={{ borderRadius: borderRadius }}
-  />
-</GridItem>
-        </GridItem>
-    </Grid>
-);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowContent(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleGetStarted = () => {
+    navigate("/home");
+  };
+
+  const heading = "Welcome to Coffee-ML";
+  const subheading = "Our goal is your satisfaction";
+
+  return (
+    <>
+      <CoffeeBeanBackground />
+      {showContent && (
+        <MotionBox
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          height="90vh"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <VStack width="100%">
+            <WelcomeText heading={heading} subheading={subheading} />
+
+            <Button
+              onClick={handleGetStarted}
+              mt={4}
+              variant={"outline"}
+              borderColor="#8B4513"
+              color="#8B4513"
+              _hover={{ bgGradient: "linear(to-r, #8B4513, #BA6A31)" , color: "white" , borderColor: "transparent"}}
+              rounded={"full"}
+              px={6}
+              py={3}
+              fontSize={"md"}
+              fontWeight={"light"}
+              rightIcon={<BiSolidCoffeeBean />}
+            >
+              Get Started Now!
+            </Button>
+          </VStack>
+        </MotionBox>
+      )}
+    </>
+  );
 };
 
 export default Welcome;
