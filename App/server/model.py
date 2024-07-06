@@ -173,7 +173,7 @@ class ModelsWrapper:
             if object_detected:
                 return self.predict_without_detect(image_path, classifications)
             else:
-                return {"Object not detected": "No predictions"}
+                return {"Object_not_detected": "No predictions"}
 
 
     def detection(self, image_path):

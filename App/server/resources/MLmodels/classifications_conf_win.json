@@ -2,7 +2,7 @@
     "clasifications": 
     [
         {
-            "classification_name": "coffe_type",
+            "classification_name": "coffee_type",
             "model_path": "resources\\MLmodels\\coffee_type_classification\\coffee_type_classification_v1.pt",
             "class_labels": [
                 "cappuccino",
