@@ -14,11 +14,8 @@ import {
 const ByImageContainer = () => {
     const [image, setImage] = useState(null);
     const [imageUrl, setImageUrl] = useState('');
-<<<<<<< HEAD
     const [isLoading, setIsLoading] = useState(false);
-=======
     const [responseData, setResponseData] = useState(null); // State for storing the server response
->>>>>>> origin/main
     const toast = useToast();
 
     const handleImageChange = (e) => {
@@ -33,14 +30,11 @@ const ByImageContainer = () => {
     const handleSubmit = async () => {
         if (!image) return;
 
-<<<<<<< HEAD
         setIsLoading(true);
         setTimeout(() => {
             setIsLoading(false);
         }, 3000);
 
-=======
->>>>>>> origin/main
         const formData = new FormData();
         formData.append('file', image);
 
