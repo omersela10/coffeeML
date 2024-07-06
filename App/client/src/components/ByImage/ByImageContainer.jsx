@@ -14,7 +14,11 @@ import {
 const ByImageContainer = () => {
     const [image, setImage] = useState(null);
     const [imageUrl, setImageUrl] = useState('');
+<<<<<<< HEAD
     const [isLoading, setIsLoading] = useState(false);
+=======
+    const [responseData, setResponseData] = useState(null); // State for storing the server response
+>>>>>>> origin/main
     const toast = useToast();
 
     const handleImageChange = (e) => {
@@ -29,11 +33,14 @@ const ByImageContainer = () => {
     const handleSubmit = async () => {
         if (!image) return;
 
+<<<<<<< HEAD
         setIsLoading(true);
         setTimeout(() => {
             setIsLoading(false);
         }, 3000);
 
+=======
+>>>>>>> origin/main
         const formData = new FormData();
         formData.append('file', image);
 
@@ -46,6 +53,7 @@ const ByImageContainer = () => {
             const result = await response.json();
 
             if (response.ok) {
+                setResponseData(result); // Update the state with the response data
                 toast({
                     title: "Image uploaded.",
                     description: result.message,
@@ -128,6 +136,21 @@ const ByImageContainer = () => {
             >
                 Upload Image
             </Button>
+            {responseData && (
+                <Center
+                    w="full"
+                    p={4}
+                    borderWidth="1px"
+                    borderColor="gray.300"
+                    borderRadius="md"
+                    mt={4}
+                    bg="gray.50"
+                >
+                    <Text as="pre" fontSize="md" textAlign="left">
+                        {JSON.stringify(responseData, null, 2)}
+                    </Text>
+                </Center>
+            )}
         </VStack>
     );
 };

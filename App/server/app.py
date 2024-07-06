@@ -2,6 +2,13 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 import os
 import time
+from model import ModelsWrapper
+import platform
+
+if platform.system() == "Windows":
+    json_file_path = os.path.join("resources", "MLmodels", "classifications_conf_win.json")
+else:
+    json_file_path = os.path.join("resources", "MLmodels", "classifications_conf_linux.json")
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
@@ -24,8 +31,21 @@ def upload_file():
     if file:
         filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filename)
-        time.sleep(3)  # Simulate a delay
-        return jsonify(message="File uploaded successfully"), 200
+        
+        # Simulate a delay
+        time.sleep(3)
+        
+        # Perform predictions
+        classifications_to_predict = [
+            "coffe_type",
+            "crema", 
+            "served_way",
+            "type_of_cup",
+        ]
+        models_wrapper = ModelsWrapper(json_file_path)
+        predictions_with_detect = models_wrapper.predict_with_detect(filename, classifications_to_predict)
+        
+        return jsonify(predictions_with_detect), 200
 
 if __name__ == '__main__':
     if not os.path.exists(UPLOAD_FOLDER):
