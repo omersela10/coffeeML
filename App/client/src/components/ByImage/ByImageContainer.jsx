@@ -3,6 +3,13 @@ import { Button, Text, VStack, useToast, Center, Image, Input } from '@chakra-ui
 import { APIBASEURL } from '../../assets/ApiManager';
 import { BiCoffee } from 'react-icons/bi';
 import CoffeeLoader from '../shared_components/CoffeeLoader';
+import {
+  coffeePrimaryColor,
+  coffeeSecondaryColor,
+  coffeeHoverColor,
+  activeLeftButton,
+  borderRadius,
+} from '../../assets/theme';
 
 const ByImageContainer = () => {
     const [image, setImage] = useState(null);
@@ -82,9 +89,9 @@ const ByImageContainer = () => {
                 p={4}
                 borderStyle="dotted"
                 borderWidth="2px"
-                borderColor="gray.300"
-                borderRadius="md"
-                _hover={{ borderColor: "gray.500" }}
+                borderColor={coffeeSecondaryColor}
+                borderRadius={borderRadius}
+                _hover={{ borderColor: coffeeHoverColor }}
                 position="relative"
                 overflow="hidden"
             >
@@ -111,8 +118,9 @@ const ByImageContainer = () => {
                 )}
             </Center>
             <Button
-                colorScheme="blue"
-                variant="outline"
+                bg={coffeePrimaryColor}
+                color="white"
+                _hover={{ bg: coffeeHoverColor }}
                 isDisabled={!image || isLoading}
                 onClick={handleSubmit}
                 mb={4}

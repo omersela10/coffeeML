@@ -176,6 +176,7 @@ const About = () => {
           </MotionBox>
         </Box>
       </Flex>
+      
     </Container>
   );
 };

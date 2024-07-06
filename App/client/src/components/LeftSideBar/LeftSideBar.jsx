@@ -1,16 +1,35 @@
 import React from "react";
-import { Box, Button, Divider, IconButton, VStack } from "@chakra-ui/react";
-
-import {BsFillImageFill } from "react-icons/bs";
+import { Box, Button, Divider, VStack } from "@chakra-ui/react";
+import { BsFillImageFill } from "react-icons/bs";
 import { PiCoffeeFill } from "react-icons/pi";
 import { FaMapLocationDot } from "react-icons/fa6";
-
 
 import {
   activeLeftButton,
   bgPrimaryColor,
   borderRadius,
+  coffeePrimaryColor,
+  coffeeSecondaryColor,
+  coffeeHoverColor,
 } from "../../assets/theme";
+
+const buttonConfigs = [
+  {
+    icon: <BsFillImageFill />,
+    label: "Image",
+    component: "byImage",
+  },
+  {
+    icon: <PiCoffeeFill />,
+    label: "Coffee Shop",
+    component: "2",
+  },
+  {
+    icon: <FaMapLocationDot />,
+    label: "Location",
+    component: "3",
+  },
+];
 
 const LeftSidebar = ({ activeComponent, setActiveComponent }) => {
   const handleComponentChange = (component) => {
@@ -26,44 +45,22 @@ const LeftSidebar = ({ activeComponent, setActiveComponent }) => {
       ml={4}
     >
       <VStack spacing={4} align="stretch" p={4}>
-        <Button
-          leftIcon={<BsFillImageFill />}
-          variant={activeComponent === "byImage" ? "solid" : "outline"}
-          colorScheme={activeComponent === "byImage" ? "blue" : "gray"}
-          bg={activeComponent === "byImage" ? activeLeftButton : "gray.100"}
-          _hover={{ bg: "gray.500" ,color:"white"}}
-          justifyContent={"flex-start"}
-          onClick={() => handleComponentChange("byImage")}
-        >
-          <Divider h={"20px"} mr={2} orientation="vertical" />
-          Image
-        </Button>
-        <Button
-          leftIcon={<PiCoffeeFill />}
-          variant={activeComponent === "2" ? "solid" : "outline"}
-          colorScheme={activeComponent === "2" ? "blue" : "gray"}
-          bg={activeComponent === "2" ? activeLeftButton : "gray.100"}
-          justifyContent={"flex-start"}
-          _hover={{ bg: "gray.500" ,color:"white"}}
-          onClick={() => handleComponentChange("2")}
-        >
-            <Divider h={"20px"} mr={2}  orientation='vertical'/>
-
-          Coffe Shop
-        </Button>
-        <Button
-          leftIcon={<FaMapLocationDot />}
-          variant={activeComponent === "3" ? "solid" : "outline"}
-          colorScheme={activeComponent === "3" ? "blue" : "gray"}
-          bg={activeComponent === "3" ? activeLeftButton : "gray.100"}
-          _hover={{ bg: "gray.500" ,color:"white"}}
-          justifyContent={"flex-start"}
-          onClick={() => handleComponentChange("3")}
-        >
-            <Divider h={"20px"} mr={2}  orientation='vertical'/>
-
-          Location
-        </Button>
+        {buttonConfigs.map((btn) => (
+          <Button
+            key={btn.component}
+            leftIcon={btn.icon}
+            variant={activeComponent === btn.component ? "solid" : "outline"}
+            colorScheme={activeComponent === btn.component ? coffeePrimaryColor : coffeeSecondaryColor}
+            bg={activeComponent === btn.component ? activeLeftButton : coffeeSecondaryColor}
+            _hover={{ bg: coffeeHoverColor, color: "white" }}
+            justifyContent={"flex-start"}
+            onClick={() => handleComponentChange(btn.component)}
+            border={"none"}
+          >
+            <Divider h={"20px"} mr={2} orientation="vertical" />
+            {btn.label}
+          </Button>
+        ))}
       </VStack>
     </Box>
   );

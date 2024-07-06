@@ -23,7 +23,6 @@ const CoffeeBeanBackground = () => {
         transition: { delay: i * 0.2, duration: 0.8 },
       }));
 
-      // Blur coffee1 and coffee4 after initial animation
       await controls.start((i) => {
         if (i === 0 || i === 2) {
           return {
@@ -34,12 +33,11 @@ const CoffeeBeanBackground = () => {
         return {};
       });
 
-      // Fade in coffee7 at the end
       controls.start((i) => {
-        if (i === 6) { // Assuming coffee7 is at index 6
+        if (i === 6) { 
           return {
             opacity: 1,
-            transition: { delay: 2, duration: 1 } // Adjust delay as needed
+            transition: { delay: 2, duration: 1 } 
           };
         }
         return {};

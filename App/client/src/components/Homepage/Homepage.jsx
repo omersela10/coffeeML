@@ -3,6 +3,8 @@ import { Box, Flex } from '@chakra-ui/react';
 import { bgPrimaryColor, borderRadius } from '../../assets/theme';
 import LeftSidebar from '../LeftSideBar/LeftSideBar';
 import ByImageContainer from '../ByImage/ByImageContainer';
+import ByCoffeeShop from '../ByCoffeeShop/ByCoffeeShop';
+import ByLocation from '../ByLocation/ByLocation';
 
 const Homepage = () => {
   const [activeComponent, setActiveComponent] = useState('byImage');
@@ -12,9 +14,9 @@ const Homepage = () => {
       case 'byImage':
         return <ByImageContainer />;
       case '2':
-        return <h1>2</h1>;
+        return <ByCoffeeShop />;
       case '3':
-        return <h1>3</h1>;
+        return <ByLocation  />;
       default:
         return null;
     }
