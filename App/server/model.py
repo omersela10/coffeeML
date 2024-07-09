@@ -41,7 +41,7 @@ class ClassificationModel:
             # Perform prediction
             results = self.model.predict(image_path, show=False)
             
-            # Extract the predicted class with the highest confidence
+            # extract the predicted class 
             for result in results:
                 if len(result.boxes) > 0:
                     predicted_class_id = int(result.boxes[0].cls)
