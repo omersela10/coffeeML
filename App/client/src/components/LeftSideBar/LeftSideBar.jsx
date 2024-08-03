@@ -3,6 +3,7 @@ import { Box, Button, Divider, VStack } from "@chakra-ui/react";
 import { BsFillImageFill } from "react-icons/bs";
 import { PiCoffeeFill } from "react-icons/pi";
 import { FaMapLocationDot } from "react-icons/fa6";
+import CoffeeChoiceSection from "../shared_components/CoffeChoiceSelection/CoffeeChoiceSelection";
 
 import {
   activeLeftButton,
@@ -31,27 +32,40 @@ const buttonConfigs = [
   },
 ];
 
-const LeftSidebar = ({ activeComponent, setActiveComponent }) => {
+const LeftSidebar = ({
+  activeComponent,
+  setActiveComponent,
+  userChoices,
+  setUserChoices,
+}) => {
   const handleComponentChange = (component) => {
     setActiveComponent(component);
   };
 
   return (
     <Box
-      w={300}
+      w={400}
       bgColor={bgPrimaryColor}
       h="100%"
       borderRadius={borderRadius}
       ml={4}
     >
       <VStack spacing={4} align="stretch" p={4}>
-        {buttonConfigs.map((btn) => (
+        {/* {buttonConfigs.map((btn) => (
           <Button
             key={btn.component}
             leftIcon={btn.icon}
             variant={activeComponent === btn.component ? "solid" : "outline"}
-            colorScheme={activeComponent === btn.component ? coffeePrimaryColor : coffeeSecondaryColor}
-            bg={activeComponent === btn.component ? activeLeftButton : coffeeSecondaryColor}
+            colorScheme={
+              activeComponent === btn.component
+                ? coffeePrimaryColor
+                : coffeeSecondaryColor
+            }
+            bg={
+              activeComponent === btn.component
+                ? activeLeftButton
+                : coffeeSecondaryColor
+            }
             _hover={{ bg: coffeeHoverColor, color: "white" }}
             justifyContent={"flex-start"}
             onClick={() => handleComponentChange(btn.component)}
@@ -60,7 +74,11 @@ const LeftSidebar = ({ activeComponent, setActiveComponent }) => {
             <Divider h={"20px"} mr={2} orientation="vertical" />
             {btn.label}
           </Button>
-        ))}
+        ))} */}
+        <CoffeeChoiceSection
+          userChoices={userChoices}
+          setUserChoices={setUserChoices}
+        />
       </VStack>
     </Box>
   );
