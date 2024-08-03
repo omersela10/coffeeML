@@ -1,67 +1,51 @@
 import React from "react";
-import { Box, Button, Divider, VStack } from "@chakra-ui/react";
-import { BsFillImageFill } from "react-icons/bs";
-import { PiCoffeeFill } from "react-icons/pi";
-import { FaMapLocationDot } from "react-icons/fa6";
+import { Box, VStack, Text, Divider } from "@chakra-ui/react";
+import CoffeeChoiceSection from "../shared_components/CoffeChoiceSelection/CoffeeChoiceSelection";
+import { bgPrimaryColor, borderRadius } from "../../assets/theme";
 
-import {
-  activeLeftButton,
-  bgPrimaryColor,
-  borderRadius,
-  coffeePrimaryColor,
-  coffeeSecondaryColor,
-  coffeeHoverColor,
-} from "../../assets/theme";
-
-const buttonConfigs = [
-  {
-    icon: <BsFillImageFill />,
-    label: "Image",
-    component: "byImage",
-  },
-  {
-    icon: <PiCoffeeFill />,
-    label: "Coffee Shop",
-    component: "2",
-  },
-  {
-    icon: <FaMapLocationDot />,
-    label: "Location",
-    component: "3",
-  },
-];
-
-const LeftSidebar = ({ activeComponent, setActiveComponent }) => {
-  const handleComponentChange = (component) => {
-    setActiveComponent(component);
-  };
-
+const LeftSidebar = ({ userChoices, setUserChoices, isDisabled }) => {
   return (
     <Box
-      w={300}
-      bgColor={bgPrimaryColor}
+      position="relative"
+      w={400}
       h="100%"
+      bgColor={bgPrimaryColor}
       borderRadius={borderRadius}
       ml={4}
+      justifyContent="space-between"
     >
-      <VStack spacing={4} align="stretch" p={4}>
-        {buttonConfigs.map((btn) => (
-          <Button
-            key={btn.component}
-            leftIcon={btn.icon}
-            variant={activeComponent === btn.component ? "solid" : "outline"}
-            colorScheme={activeComponent === btn.component ? coffeePrimaryColor : coffeeSecondaryColor}
-            bg={activeComponent === btn.component ? activeLeftButton : coffeeSecondaryColor}
-            _hover={{ bg: coffeeHoverColor, color: "white" }}
-            justifyContent={"flex-start"}
-            onClick={() => handleComponentChange(btn.component)}
-            border={"none"}
-          >
-            <Divider h={"20px"} mr={2} orientation="vertical" />
-            {btn.label}
-          </Button>
-        ))}
+      {isDisabled && (
+        <Box
+          position="absolute"
+          top={0}
+          left={0}
+          width="100%"
+          height="100%"
+          bgColor="rgba(255, 255, 255, 0.6)"
+          zIndex={2}
+          cursor="not-allowed"
+          pointerEvents="all"
+          borderRadius={borderRadius}
+        ></Box>
+      )}
+      <VStack spacing={4} align="stretch" p={4} pointerEvents={isDisabled ? "none" : "all"} h="80%">
+        <CoffeeChoiceSection userChoices={userChoices} setUserChoices={setUserChoices} />
       </VStack>
+      <Box p={4} borderTop="1px solid" borderColor="gray.200">
+        <Text fontSize="lg" fontWeight="bold" mb={2}>
+          User Choices
+        </Text>
+        {Object.keys(userChoices).map((key) => (
+          <Box key={key} display="flex" justifyContent="space-between" mb={2}>
+            <Text fontWeight="medium" color="gray.600">
+              {key.replace(/_/g, " ")}:
+            </Text>
+            <Text fontWeight="bold" color="gray.800">
+              {String(userChoices[key])}
+            </Text>
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };

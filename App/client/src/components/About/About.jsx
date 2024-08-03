@@ -31,7 +31,7 @@ const cardsData = [
     image: coffeeType,
     icon: coffeeTypeIcon,
     title: "Coffee Type",
-    description: "Identify the type of coffee beans or blend used.",
+    description: "Identify the type of coffee (e.g. espresso, cappuccino, black).",
   },
   {
     image: crema,
@@ -43,7 +43,7 @@ const cardsData = [
     image: servedWay,
     icon: servedWayIcon,
     title: "Served Way",
-    description: "Determine how the coffee is served (e.g., espresso, latte).",
+    description: "Determine how the coffee is served.",
   },
   {
     image: cupType,
@@ -139,7 +139,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <ColorAnimated
-              text="CoffeeML is a final project in our course. It involves creating a machine learning model that analyzes coffee images and provides detailed information about:"
+              text="CoffeeML is our final project. It involves creating a deep learning model that analyzes coffee images and provides detailed information about:"
               colors={titlesObj.description.colors}
               size={titlesObj.description.fontSize}
               fontFamily={titlesObj.description.fontFamily}

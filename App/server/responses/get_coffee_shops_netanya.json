@@ -1,0 +1,701 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.32925429999999,
+        "lng": 34.85291639999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.33061283029149,
+          "lng": 34.85438853029149
+        },
+        "southwest": {
+          "lat": 32.32791486970849,
+          "lng": 34.8516905697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Perugino",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109561781298487595251\">\u05e4\u05e8\u05d5\u05d2&#39;\u05d9\u05e0\u05d5 \u05d7\u05e0\u05d5\u05ea \u05d4\u05de\u05e4\u05e2\u05dc-Perugino factory</a>"
+        ],
+        "photo_reference": "AUc7tXXb_gUbkBBXWr1rZzZfCSfdT13otN3EcoUUWBWPJYS5pf4k94hy4J2i81cXOGLe1QmR0LIN99IjjTo0SA2FILoiBmAat1PAQ0Cy11R-j97ELhwv9jsSB6sAtQ-ys6F0M0gMNGCzEzRxYsctrV7x5p83uvjWLsMX_DHCc3U4UXaSUl4r",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJw0NeX6hqHRURWnAYAM0XoIU",
+    "plus_code": {
+      "compound_code": "8VH3+P5 Netanya, Israel",
+      "global_code": "8G4P8VH3+P5"
+    },
+    "price_level": 2,
+    "rating": 4,
+    "reference": "ChIJw0NeX6hqHRURWnAYAM0XoIU",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bakery",
+      "store",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 546,
+    "vicinity": "Dizengoff Street 30, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3267262,
+        "lng": 34.8616931
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3281042802915,
+          "lng": 34.8629116802915
+        },
+        "southwest": {
+          "lat": 32.3254063197085,
+          "lng": 34.8602137197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Cafe Greg",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3456,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110466371345438082728\">Alexander K (Sasha)</a>"
+        ],
+        "photo_reference": "AUc7tXWVO5E-JFheku-YfgJf4FZAsR8eS1pJCIpm6EC4HMBp9cCXUBcQnGjbce1vrM5QfCNkHFRS39k029bO8GjyyWze8Zm1rEq9ynHL-SbJdE8-o1-wbF7WC3BYVxuhMst8RBN32NQA1gTxix_EhQT8LGQNrrHKz2Pu4J7izbysuhS3MaiB",
+        "width": 4608
+      }
+    ],
+    "place_id": "ChIJnYSZ2qpqHRURGB1SroDRT7I",
+    "plus_code": {
+      "compound_code": "8VG6+MM Netanya, Israel",
+      "global_code": "8G4P8VG6+MM"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJnYSZ2qpqHRURGB1SroDRT7I",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 609,
+    "vicinity": "Herzl Street 60, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3304506,
+        "lng": 34.8523855
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.33161233029149,
+          "lng": 34.8532131802915
+        },
+        "southwest": {
+          "lat": 32.32891436970849,
+          "lng": 34.85051521970851
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "\u05d0\u05dc\u05d5\u05e0\u05d6\u05d5 | Alonzo",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 576,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/101813498800555137492\">Alonzo</a>"
+        ],
+        "photo_reference": "AUc7tXWbrSVsWV3xCK-wz7IbLtjmV-CvAiHNs69G4c0lur9OFBnh8SbDX8MRKpGhwd9egJBTKBugkQOZ_ORpuDS5WhTEjo0J4yKbRCcGDmYOo2kBIEKGIP7R4Kk92GOnRjHlViXgzU6PaVadTRbQzoTrHD0UGKjSkNq97hRHplJiOQu3RMwF",
+        "width": 1024
+      }
+    ],
+    "place_id": "ChIJucBQiqhqHRURMkp92ZLJ7YE",
+    "plus_code": {
+      "compound_code": "8VJ2+5X Netanya, Israel",
+      "global_code": "8G4P8VJ2+5X"
+    },
+    "price_level": 2,
+    "rating": 4.2,
+    "reference": "ChIJucBQiqhqHRURMkp92ZLJ7YE",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 982,
+    "vicinity": "Kikar HaAtsmaut 13, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.326542,
+        "lng": 34.862199
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3280524302915,
+          "lng": 34.8632856802915
+        },
+        "southwest": {
+          "lat": 32.3253544697085,
+          "lng": 34.8605877197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Aroma",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 434,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113865943111982340762\">Aroma</a>"
+        ],
+        "photo_reference": "AUc7tXWcAH1fV5nbcx9xQKO3U7yNzcAf_AH9zwpd6dYV7FvpEG-oUUltJHbaxsk-6av-dblBhYWZP6rE5DepXxFwIg0actUgTiuSW8xUJq835Jq8jID5Cz5IkI9UFFHpb9MgpznL1Fbee1B80Tt3rgOUfytF4iKfD061wQCbtrLqDGhMVZ-c",
+        "width": 706
+      }
+    ],
+    "place_id": "ChIJRSW5vapqHRUR_3CzoDokkvI",
+    "plus_code": {
+      "compound_code": "8VG6+JV Netanya, Israel",
+      "global_code": "8G4P8VG6+JV"
+    },
+    "price_level": 2,
+    "rating": 3.9,
+    "reference": "ChIJRSW5vapqHRUR_3CzoDokkvI",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 251,
+    "vicinity": "Ofer Hasharon Mall, Herzl Street 60, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3302093,
+        "lng": 34.8484746
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3312544802915,
+          "lng": 34.8499535802915
+        },
+        "southwest": {
+          "lat": 32.3285565197085,
+          "lng": 34.84725561970851
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Cafe cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1908,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105818804282681155795\">Simon Brown</a>"
+        ],
+        "photo_reference": "AUc7tXVmSFluejUEh1dOjB91coU_btDx3IjOVB_LxiTa9clJE4YJoCvs-vPj1F-BS1L8aT__DRuRAdPLT7mEyDBMF3XgijNwF3yXHcD5bTlpSRQceC1rqIBszf1ZuA7FPFZzoX7oW60ytseeBIelrFyO3zK8HKGl1IV8rHvYrKQ59MqcVYvm",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJq0xyC6dqHRUR0SqJ9Oc46uI",
+    "plus_code": {
+      "compound_code": "8RJX+39 Netanya, Israel",
+      "global_code": "8G4P8RJX+39"
+    },
+    "price_level": 2,
+    "rating": 3.6,
+    "reference": "ChIJq0xyC6dqHRUR0SqJ9Oc46uI",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "store",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1836,
+    "vicinity": "\u05d7\u05d5\u05e3 \u05e1\u05d9\u05e8\u05d5\u05e0\u05d9\u05ea, \u05e0\u05ea\u05e0\u05d9\u05d4"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.321055,
+        "lng": 34.8675594
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.32234288029151,
+          "lng": 34.8688969802915
+        },
+        "southwest": {
+          "lat": 32.31964491970851,
+          "lng": 34.8661990197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "Cafe Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1828,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112647627643081351223\">\u05d0\u05d9\u05dc \u05d0\u05d3\u05d9\u05e8\u05d9 Ayal adiri</a>"
+        ],
+        "photo_reference": "AUc7tXXeMlUCnlZovYwe55Qzyy_WNuRvDu6qIVAsAjn5df4kEw7Mx1p3HcyVkeq_a6xH9bQapNfmi0v0MEdbOsFzQcDN4mDUl5sawLoMwaImq7X0bz_LfkCtjSvA0Axi6-LfV_lPRMWlgPlfxBYsKItjESt3W1hURNZBc3wyJ_dOkt7jWDvt",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJOU0kev4_HRURd-MiLkxnA7U",
+    "plus_code": {
+      "compound_code": "8VC9+C2 Netanya, Israel",
+      "global_code": "8G4P8VC9+C2"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJOU0kev4_HRURd-MiLkxnA7U",
+    "scope": "GOOGLE",
+    "types": [
+      "restaurant",
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2194,
+    "vicinity": "\u05de\u05ea\u05d7\u05dd \u05ea\u05d7\u05e0\u05ea \u05d3\u05dc\u05e7 \u05e1\u05d5\u05e0\u05d5\u05dc, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3293342,
+        "lng": 34.8495903
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3306589302915,
+          "lng": 34.85104388029149
+        },
+        "southwest": {
+          "lat": 32.3279609697085,
+          "lng": 34.84834591970849
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "HaYekev",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 810,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/107166784997520308432\">\u05d4\u05d9\u05e7\u05d1</a>"
+        ],
+        "photo_reference": "AUc7tXVEMTi2g4lvn214pNo21h0pZLDc2O6oYjg7W87FL_GQ2uzN-8Tt1AV8WHZiyfkRt2VYJrU_3pURIw7XybTHFH6k4grsW9C2eP0AHwArArzLz6MG6MX-2vtC_G_xRPWJiesmLY8Ov07yC5qyP7YhmBknoI3819pHCNqnNn0M-tPUvfkf",
+        "width": 1440
+      }
+    ],
+    "place_id": "ChIJC2nDlKdqHRURPYcUo-8fUqs",
+    "plus_code": {
+      "compound_code": "8RHX+PR Netanya, Israel",
+      "global_code": "8G4P8RHX+PR"
+    },
+    "price_level": 2,
+    "rating": 4.4,
+    "reference": "ChIJC2nDlKdqHRURPYcUo-8fUqs",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "restaurant",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 6370,
+    "vicinity": "Gad Machnes Street 6, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3241347,
+        "lng": 34.8568899
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3254960302915,
+          "lng": 34.8581913302915
+        },
+        "southwest": {
+          "lat": 32.3227980697085,
+          "lng": 34.8554933697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+    "name": "ROUAH HAMATOK 770",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/117248343829560924093\">KATE</a>"
+        ],
+        "photo_reference": "AUc7tXU5nrPopuq5ys0rQd9qCfnFIjpfMbmWzxotc2-L5tRw59pnhRePGn2nB81y80ElK_uEQWxJXJnoy-bojswoSOmCmx3YechFVHsnKzzeWvkuvvGWlBtlQADJD4rKEeqMpxDuaWz5v1W0Ck7ySESnEMJb6FniymCYcLfZx5yuMKGRRqLH",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJBa5RhwFAHRURHUaE1W9iJBA",
+    "plus_code": {
+      "compound_code": "8VF4+MQ Netanya, Israel",
+      "global_code": "8G4P8VF4+MQ"
+    },
+    "rating": 3.5,
+    "reference": "ChIJBa5RhwFAHRURHUaE1W9iJBA",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "bakery",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2,
+    "vicinity": "Sderot Binyamin 31, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3258628,
+        "lng": 34.8519301
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3272357802915,
+          "lng": 34.85322783029149
+        },
+        "southwest": {
+          "lat": 32.3245378197085,
+          "lng": 34.8505298697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "\u05e4\u05d0\u05e4\u05d0 \u05d1\u05d0\u05d1\u05d0 \u05d3\u05dc\u05d9\u05e7\u05d8\u05e1",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1200,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/113919419084474762350\">\u05e4\u05d0\u05e4\u05d0 \u05d1\u05d0\u05d1\u05d0 \u05d3\u05dc\u05d9\u05e7\u05d8\u05e1</a>"
+        ],
+        "photo_reference": "AUc7tXVfJbTJ9jatH9Z3BzofY9Q1TyL6HZOd_8hw0cOiPoHjF8LmU20VxIVcQ9EwBDScY74TuUrSmhLYjVbPOj0ZHkciEFvgPSKvDtybm0XODGR6bEqV2AYpeuJiWw7yHCiH7_ZHlAQts0mL4AxuSINql82Zvw4C_3HTJdzPPJjChbKGgKTs",
+        "width": 1600
+      }
+    ],
+    "place_id": "ChIJdVn_KdRBHRURM_Ugs69ArQ8",
+    "plus_code": {
+      "compound_code": "8VG2+8Q Netanya, Israel",
+      "global_code": "8G4P8VG2+8Q"
+    },
+    "price_level": 2,
+    "rating": 4.5,
+    "reference": "ChIJdVn_KdRBHRURM_Ugs69ArQ8",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 198,
+    "vicinity": "Dizengoff Street 67, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3254189,
+        "lng": 34.857389
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3267740802915,
+          "lng": 34.8586601302915
+        },
+        "southwest": {
+          "lat": 32.3240761197085,
+          "lng": 34.8559621697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Cafe Caramel netanya",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115649301206032824389\">Cafe Caramel netanya</a>"
+        ],
+        "photo_reference": "AUc7tXWF9V0vd-Qymi_k3XgQW_CRCmJ8nMJrTqMxEDZOIbGNhGUlZwpF87YsECQkSNM2pG9dga6gi0GVTIAIEeV01CnpWDUz5Q7cyW6kKy5fpJu3iWoVy0N5oBfDwQwfC11n2b5Jw7jGi7cxK6T3qryaTgW1y9Qqk7J1n2l8VDiMqVr3TrKx",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJAcAM8QFAHRURaImV1IigpzM",
+    "plus_code": {
+      "compound_code": "8VG4+5X Netanya, Israel",
+      "global_code": "8G4P8VG4+5X"
+    },
+    "price_level": 2,
+    "rating": 3.9,
+    "reference": "ChIJAcAM8QFAHRURaImV1IigpzM",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 236,
+    "vicinity": "Sderot Binyamin 21, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3261075,
+        "lng": 34.8576598
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3274755302915,
+          "lng": 34.8589533802915
+        },
+        "southwest": {
+          "lat": 32.3247775697085,
+          "lng": 34.8562554197085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Mazalika",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115500268313631611575\">ruslan dvorkin</a>"
+        ],
+        "photo_reference": "AUc7tXWFtKzdNYBkGSMHlfvJ-UVsev4F_gSpsrdUVbg6jjBDHUsW91iSB8FzGjrw0HE5MXoiAq5bgmpomHv3sxi4sp9cYdZvY-uU49coGnoXYM2wqkjFCf1GS2fTdMCJryJZN-WxhH3IsAHjOqMhgciHmbOZGoD-Fw7nGu7Kh3e40DLfJabY",
+        "width": 768
+      }
+    ],
+    "place_id": "ChIJCSl5RcJrHRURNbzhUlopY8g",
+    "plus_code": {
+      "compound_code": "8VG5+C3 Netanya, Israel",
+      "global_code": "8G4P8VG5+C3"
+    },
+    "rating": 5,
+    "reference": "ChIJCSl5RcJrHRURNbzhUlopY8g",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2,
+    "vicinity": "Sderot Binyamin 17, Natalia"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.3272258,
+        "lng": 34.8552093
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3286589302915,
+          "lng": 34.8565034302915
+        },
+        "southwest": {
+          "lat": 32.3259609697085,
+          "lng": 34.8538054697085
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "flowers&coffee",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104894484603574239259\">Andrey Gonyaev</a>"
+        ],
+        "photo_reference": "AUc7tXWojRrBMUIbxjNtqEd8To-je-UfeKonhjLPgiI6HwN9R7GwO10EXnX89Frrj_3nP2PFGk7fuvyggkDZS3mj7UefZCt-gc2nsskcZ2HjsTind797J5CBwVJVyn2H6478PLFb99zgJW0Qs_3XNGLYw2WcCHTyT5T1vfYSPwffHPYmDFfb",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJW-0Hcs1rHRURrg0SeWgGdHI",
+    "plus_code": {
+      "compound_code": "8VG4+V3 Netanya, Israel",
+      "global_code": "8G4P8VG4+V3"
+    },
+    "rating": 5,
+    "reference": "ChIJW-0Hcs1rHRURrg0SeWgGdHI",
+    "scope": "GOOGLE",
+    "types": [
+      "florist",
+      "cafe",
+      "home_goods_store",
+      "store",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 6,
+    "vicinity": "Smilanski Street 13, Netanya"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 32.327719,
+        "lng": 34.8539496
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 32.3291114802915,
+          "lng": 34.85525123029151
+        },
+        "southwest": {
+          "lat": 32.3264135197085,
+          "lng": 34.85255326970851
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+    "icon_background_color": "#FF9E67",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+    "name": "Avo Cafe",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104586159745845563128\">Avo Cafe</a>"
+        ],
+        "photo_reference": "AUc7tXW0Q8VgXYw0KiUkig5tPFOhezLLU73eb93lMwNJwAB3WHgkSIOsvnqYhxSNQOvvgq6QMcERBGBuzyVoNcSgWCESvTaRJ93ARhQ-luDAfHrUknEQqX_zAOpfMADU_HGkmmT0_s2ZhIwintV3AzLEaMIsTtwa_5XkjHnxkoPZ8TVKaVqU",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJvSFmy1prHRURCIvAn_E3zUo",
+    "plus_code": {
+      "compound_code": "8VH3+3H Netanya, Israel",
+      "global_code": "8G4P8VH3+3H"
+    },
+    "reference": "ChIJvSFmy1prHRURCIvAn_E3zUo",
+    "scope": "GOOGLE",
+    "types": [
+      "cafe",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "vicinity": "Yehoshu'a Shtampfer Street 17, Netanya"
+  }
+]

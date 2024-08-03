@@ -1,0 +1,74 @@
+[
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXUJoROrpCUiynYlkvPJtTz3BR_KZAeQITEsGrofAVUWtL3EWIji_EBaJHtgOisziXs2g1vx511ItbpzFrU-VL3UZYg5V_dgRzjy8unUOZ-i-ypWEP2uGSrYyWTHyQ1GCjkieLb-uEa0u20Qc-4MxeMTAiJMyKkYaI-HeXMvgmrjHytn&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXUJoROrpCUiynYlkvPJtTz3BR_KZAeQITEsGrofAVUWtL3EWIji_EBaJHtgOisziXs2g1vx511ItbpzFrU-VL3UZYg5V_dgRzjy8unUOZ-i-ypWEP2uGSrYyWTHyQ1GCjkieLb-uEa0u20Qc-4MxeMTAiJMyKkYaI-HeXMvgmrjHytn.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWKy2YVkcVdD3xW-v5OLYcivxUrtS_XpkVxZNAAE5NWvt_wZO4GUu2QSSzFiUzFkamWDl7hGKKH_XEK5EKJM9o-_q4V0gAWnVkVaaYmyXTJPAWKWHjt2b-vHDsk1Ox35kPcfx7wUXvfFOGrTfW88Tucf25KSl8-r8Mls16BTWwXETcd&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXWKy2YVkcVdD3xW-v5OLYcivxUrtS_XpkVxZNAAE5NWvt_wZO4GUu2QSSzFiUzFkamWDl7hGKKH_XEK5EKJM9o-_q4V0gAWnVkVaaYmyXTJPAWKWHjt2b-vHDsk1Ox35kPcfx7wUXvfFOGrTfW88Tucf25KSl8-r8Mls16BTWwXETcd.jpg",
+        "prediction": {
+            "coffee_type": "cappuccino",
+            "crema": "Unknown",
+            "served_way": "false",
+            "type_of_cup": "true"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXVWesPgDBeOJkYh3iAjFMA6j-Vft4dOwU8kUhiZVoU48nCUzje5YeB4G_OdBGZsEXitzbEbCnyZWm5hmktUPG6dOr0fHjmtbTo4yX_nmwGpb-VYV_jWXpINM-g8YPu1G4ZTF4dwGHicNTu6R_dgRT3lxsmKdb4i7Olai7iJmZy2gVzz&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXVWesPgDBeOJkYh3iAjFMA6j-Vft4dOwU8kUhiZVoU48nCUzje5YeB4G_OdBGZsEXitzbEbCnyZWm5hmktUPG6dOr0fHjmtbTo4yX_nmwGpb-VYV_jWXpINM-g8YPu1G4ZTF4dwGHicNTu6R_dgRT3lxsmKdb4i7Olai7iJmZy2gVzz.jpg",
+        "prediction": {
+            "coffee_type": "cappuccino",
+            "crema": "true",
+            "served_way": "true",
+            "type_of_cup": "true"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWo7ZQmGUwO9-HAUs56a0tYbTjDpks-3L2pu31pGHNopkxkH72vYBY6z2hFVpRz4jisexxxH_BH1mDACMh0zWeD9PTsMi1MmSlaE0DZ0thDANBSRvYkR9N4zCwsdOb7lLubKp7NsPxVnTjCY15_XUHD0lSCnkIJI70N_4hfNsu8qe2E&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXWo7ZQmGUwO9-HAUs56a0tYbTjDpks-3L2pu31pGHNopkxkH72vYBY6z2hFVpRz4jisexxxH_BH1mDACMh0zWeD9PTsMi1MmSlaE0DZ0thDANBSRvYkR9N4zCwsdOb7lLubKp7NsPxVnTjCY15_XUHD0lSCnkIJI70N_4hfNsu8qe2E.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXU9Av2gSYCLXYxgLWNZ8mC0JYCYCol24vunxqcP7ab688ZW2kg99fcUXy4-HviEnVlda1DzLPbh_xBXbSfktVLMiOkm76-EeczX9jwK_eK8O0VaHmd-H1y-Qk6KOQT_vHMQgFoaIpvww47rU2dUiThq2mB_hnLQT-HNGoUVyXp73227&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXU9Av2gSYCLXYxgLWNZ8mC0JYCYCol24vunxqcP7ab688ZW2kg99fcUXy4-HviEnVlda1DzLPbh_xBXbSfktVLMiOkm76-EeczX9jwK_eK8O0VaHmd-H1y-Qk6KOQT_vHMQgFoaIpvww47rU2dUiThq2mB_hnLQT-HNGoUVyXp73227.jpg",
+        "prediction": {
+            "coffee_type": "cappuccino",
+            "crema": "true",
+            "served_way": "false",
+            "type_of_cup": "true"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWN5Bj5wGYipdoc2MSgnnTfIaM_NXj6BAhmOW_5UoLzxi3UqGa3WByROs_T6--094WGzqt2z0Mk71oKgrjjMVhGH8G-Fn5pZfa5jN0fVWo19h-AHFvhdnZP5khsVQHxk7QNFYsHecYILVb6q1HwTQoKo9_MMwtkZe9w4Eeydt30cJ-h&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXWN5Bj5wGYipdoc2MSgnnTfIaM_NXj6BAhmOW_5UoLzxi3UqGa3WByROs_T6--094WGzqt2z0Mk71oKgrjjMVhGH8G-Fn5pZfa5jN0fVWo19h-AHFvhdnZP5khsVQHxk7QNFYsHecYILVb6q1HwTQoKo9_MMwtkZe9w4Eeydt30cJ-h.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWTKH_jrA7lK3VMhJCO1zoGjJSaT6B21CQHqXk2DP13dCswVaWveRGLj0Y9eONn-DTmdsCQKTO0nOHSygxt4ym0yUY9R3ToA4ZHDrsYdzki1RKrrD2BJ9IyOv96Nipy7bEe0zM-i4GstueXbYXKkjZQkux18tm8PSLztJVvgDd8rjdX&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXWTKH_jrA7lK3VMhJCO1zoGjJSaT6B21CQHqXk2DP13dCswVaWveRGLj0Y9eONn-DTmdsCQKTO0nOHSygxt4ym0yUY9R3ToA4ZHDrsYdzki1RKrrD2BJ9IyOv96Nipy7bEe0zM-i4GstueXbYXKkjZQkux18tm8PSLztJVvgDd8rjdX.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWqddBjnwraMN40k5GPM1GOkMhXu9M3iqakYICn1ysv6AqrCik0a05rWNjiawlYpN7WE2Byg-QYQ1oiGkX3d-DP7v7HtsxwS-v1WXRd27iBvN_zu-Xp538vAvT8AQphvNryOUInjoYXle0RhrpMV4Cmc9ER2IuR8318p2A6dqma2ltn&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXWqddBjnwraMN40k5GPM1GOkMhXu9M3iqakYICn1ysv6AqrCik0a05rWNjiawlYpN7WE2Byg-QYQ1oiGkX3d-DP7v7HtsxwS-v1WXRd27iBvN_zu-Xp538vAvT8AQphvNryOUInjoYXle0RhrpMV4Cmc9ER2IuR8318p2A6dqma2ltn.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXUUiGDVqtn6Ox_n6c1WwyOX8RlfU9H9ouj-60WuvYl4ZuWqzo3Y6FNql8ZVuGzuqn3O2gkXZCcDrJBaQvWvy-YzTojEwbyKbVeE7hOylFAlKuQlobtoY-njKQfPqfgpGzR6VpETTBa_ORdxba3BkBpdGCHde4Y8ky2qJH9R7ShRw01U&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJvSFmy1prHRURCIvAn_E3zUo/AUc7tXUUiGDVqtn6Ox_n6c1WwyOX8RlfU9H9ouj-60WuvYl4ZuWqzo3Y6FNql8ZVuGzuqn3O2gkXZCcDrJBaQvWvy-YzTojEwbyKbVeE7hOylFAlKuQlobtoY-njKQfPqfgpGzR6VpETTBa_ORdxba3BkBpdGCHde4Y8ky2qJH9R7ShRw01U.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    }
+]

@@ -5,7 +5,7 @@ import coffeeLoader from '../../assets/lottie/coffeLoader.json'
 
 const CoffeeLoader = () => {
     return (
-        <Center w="60%" h={200} p={4} position="relative" overflow="hidden">
+        <Center w="60%" h={300} p={4} position="relative" overflow="hidden">
             <Lottie animationData={coffeeLoader} loop={true} style={{ width: '100%', height: '100%' }} />
         </Center>
     );

@@ -2,3 +2,5 @@
 __pycache__/
 GroundingDINO/venv/
 GroundingDINO/weights/
+App/server/config.json
+App/server/venv/
