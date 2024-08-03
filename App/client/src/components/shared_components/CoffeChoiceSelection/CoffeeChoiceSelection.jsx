@@ -36,6 +36,9 @@ const CoffeeChoiceSection = ({ userChoices, setUserChoices }) => {
   return (
     <Box>
       <VStack spacing={12} align="stretch" justify="center">
+        <Text fontSize="2xl" textAlign="center">
+          Choose your coffee
+        </Text>
         <FormControl>
           <FormLabel>
             <HStack display="flex" alignItems="center" justify="center">

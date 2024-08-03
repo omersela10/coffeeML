@@ -29,6 +29,17 @@ def download_image():
         return jsonify({"error": "Invalid image path"}), 400
     return send_file(image_path, mimetype="image/jpeg")
 
+@location_bp.route("/get_locations", methods=["GET"])
+@cross_origin()
+def get_locations():
+    responses_folder = os.path.join(os.getcwd(), "responses")
+    if os.path.exists(responses_folder) and os.path.isdir(responses_folder):
+        json_files = [f.replace("get_coffee_shops_", "").replace(".json", "") for f in os.listdir(responses_folder) if f.endswith(".json")]
+        return jsonify(json_files)
+    else:
+        return jsonify({"error": "responses folder not found"}), 404
+
+# Helper functions  to get real and fake data
 def get_real_coffee_shops_by_location(city):
     config_json = json.load(open("config.json"))
     GOOGLE_API_KEY = config_json["GOOGLE_API_KEY"]
@@ -121,3 +132,4 @@ def get_fake_images_by_place_id(place_id):
         return jsonify({"error": "No images available for this place"}), 400
 
     return json.load(open(json_file_path))
+
