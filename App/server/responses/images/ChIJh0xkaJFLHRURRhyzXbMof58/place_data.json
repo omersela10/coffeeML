@@ -4,9 +4,9 @@
         "local_path": "images/ChIJh0xkaJFLHRURRhyzXbMof58/AUc7tXWy28ryEFd2QG5cEfSargKCDERryfZNvEAgGgaH0993c0H5gUp8mdpQ_lr77gQn_eC8C7mY9JuxT5ldiRrMosAAsqaGEXCwmHTSPNf9dWrdiwHQm38YFAatayZaswrzjr6o8fhc4BSS62bft-NxifqA_1tegfzpF2ehBo36Qj2WG698.jpg",
         "prediction": {
             "coffee_type": "espresso",
-            "crema": "false",
+            "crema": "true",
             "served_way": "false",
-            "type_of_cup": "true"
+            "type_of_cup": "false"
         }
     },
     {
@@ -57,7 +57,7 @@
         "prediction": {
             "coffee_type": "cappuccino",
             "crema": "true",
-            "served_way": "false",
+            "served_way": "true",
             "type_of_cup": "true"
         }
     },

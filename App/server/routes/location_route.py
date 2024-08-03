@@ -37,6 +37,7 @@ def get_location_results():
     request_data = request.get_json()
     location = request_data.get("location")
     user_choices = request_data.get("userChoices")
+    print(user_choices)
     if not location:
         return jsonify({"error": "Location parameter is required"}), 400
 

@@ -74,7 +74,7 @@
         "prediction": {
             "coffee_type": "cappuccino",
             "crema": "true",
-            "served_way": "Unknown",
+            "served_way": "true",
             "type_of_cup": "true"
         }
     }

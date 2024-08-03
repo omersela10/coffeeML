@@ -17,17 +17,17 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXVyE1sxG2Mt9vEpoBW_mmrqNg_ZbQK74rLcjjKyEdGPQNQtWLqhSvBa3EoH0HlK-38vXv0hIdmmod0p4MO-phAN-GIOOzJm9IZ_vAbae3kTmBFuKM16w5ML4EeWRTxz4su3Nu8beZnpIgoOR4Eo2SgVQM0HhEiUT5H1Y_TQzlztxnjf&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJGagCnO5LHRURqXNcVN8plNs/AUc7tXVyE1sxG2Mt9vEpoBW_mmrqNg_ZbQK74rLcjjKyEdGPQNQtWLqhSvBa3EoH0HlK-38vXv0hIdmmod0p4MO-phAN-GIOOzJm9IZ_vAbae3kTmBFuKM16w5ML4EeWRTxz4su3Nu8beZnpIgoOR4Eo2SgVQM0HhEiUT5H1Y_TQzlztxnjf.jpg",
         "prediction": {
-            "coffee_type": "cappuccino",
-            "crema": "true",
-            "served_way": "true",
-            "type_of_cup": "true"
+            "Object_not_detected": "No predictions"
         }
     },
     {
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXV-w5VfCVl_L3-FaMapDejn9F5KvmyV7rf9W26MBmX8N7Nz586-Qwfi9xK04pI-TxdBEAw4maj5fbbhObjus9GZIxDXNiHewral3Iz2ydcc1JPIEDPc394525MPWpZIK2F-tXe7qiUhgH-cBLqaT5O8DnIXbnOiYxTA0xrALjffdqw6&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJGagCnO5LHRURqXNcVN8plNs/AUc7tXV-w5VfCVl_L3-FaMapDejn9F5KvmyV7rf9W26MBmX8N7Nz586-Qwfi9xK04pI-TxdBEAw4maj5fbbhObjus9GZIxDXNiHewral3Iz2ydcc1JPIEDPc394525MPWpZIK2F-tXe7qiUhgH-cBLqaT5O8DnIXbnOiYxTA0xrALjffdqw6.jpg",
         "prediction": {
-            "Object_not_detected": "No predictions"
+            "coffee_type": "cappuccino",
+            "crema": "true",
+            "served_way": "true",
+            "type_of_cup": "true"
         }
     },
     {
@@ -46,8 +46,8 @@
         "prediction": {
             "coffee_type": "cappuccino",
             "crema": "true",
-            "served_way": "Unknown",
-            "type_of_cup": "Unknown"
+            "served_way": "true",
+            "type_of_cup": "true"
         }
     },
     {

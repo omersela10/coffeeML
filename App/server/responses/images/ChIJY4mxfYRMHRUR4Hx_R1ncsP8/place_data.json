@@ -3,10 +3,10 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWu4T6uudIJPwkNGI3E7sRiloB7VGZExFP37M_xrS5DmzwlD-eunzBfat0emCyaz1AgV9PwMdZuHuOBvgBk1yIjEgzixlBqIg4VFHHUC07R93IeTfuPwD0MCLYx6hpDOINWbgpMo__sI8RsNq5nsaWsCmuFZLvpM2OVn7lgBf20diSq&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJY4mxfYRMHRUR4Hx_R1ncsP8/AUc7tXWu4T6uudIJPwkNGI3E7sRiloB7VGZExFP37M_xrS5DmzwlD-eunzBfat0emCyaz1AgV9PwMdZuHuOBvgBk1yIjEgzixlBqIg4VFHHUC07R93IeTfuPwD0MCLYx6hpDOINWbgpMo__sI8RsNq5nsaWsCmuFZLvpM2OVn7lgBf20diSq.jpg",
         "prediction": {
-            "coffee_type": "cappuccino",
-            "crema": "Unknown",
-            "served_way": "Unknown",
-            "type_of_cup": "Unknown"
+            "coffee_type": "espresso",
+            "crema": "false",
+            "served_way": "false",
+            "type_of_cup": "true"
         }
     },
     {
@@ -61,8 +61,8 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWYlyf8vNw2sxXGrH1r7Nt9SXKYO1Em7Lbkjykc3qt6ywy4CDpd58IwrzBxxy3OOgMr2O9QM9dWLiYHO6-1mqUJ2R5pL_hORDaqGJqwhwHRZHVXrZQ86EfyeLfiny-uCE4Da6oNV0zVS9Zvag_HvRAtnznVUqjAJaDMeOUY053bBnwe&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJY4mxfYRMHRUR4Hx_R1ncsP8/AUc7tXWYlyf8vNw2sxXGrH1r7Nt9SXKYO1Em7Lbkjykc3qt6ywy4CDpd58IwrzBxxy3OOgMr2O9QM9dWLiYHO6-1mqUJ2R5pL_hORDaqGJqwhwHRZHVXrZQ86EfyeLfiny-uCE4Da6oNV0zVS9Zvag_HvRAtnznVUqjAJaDMeOUY053bBnwe.jpg",
         "prediction": {
-            "coffee_type": "espresso",
-            "crema": "true",
+            "coffee_type": "black",
+            "crema": "false",
             "served_way": "false",
             "type_of_cup": "true"
         }
@@ -71,10 +71,7 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXVCvVpShCSGGSkHrWHsukcn5vlbORMC8LMPeBXu3Fy6xP4o4GB3Etsy9p6esEoeaz8_KbcWP_xvIYgKKJlyZsxy0S6deNLyJbSsrInhDLezP2n1dC-1w6Bax3ZqZGwvPh-0FPLhkSJyi5CAS5LjrFEOePl71-KAyhZ_8ITAz2o1jwRR&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJY4mxfYRMHRUR4Hx_R1ncsP8/AUc7tXVCvVpShCSGGSkHrWHsukcn5vlbORMC8LMPeBXu3Fy6xP4o4GB3Etsy9p6esEoeaz8_KbcWP_xvIYgKKJlyZsxy0S6deNLyJbSsrInhDLezP2n1dC-1w6Bax3ZqZGwvPh-0FPLhkSJyi5CAS5LjrFEOePl71-KAyhZ_8ITAz2o1jwRR.jpg",
         "prediction": {
-            "coffee_type": "Unknown",
-            "crema": "Unknown",
-            "served_way": "Unknown",
-            "type_of_cup": "Unknown"
+            "Object_not_detected": "No predictions"
         }
     },
     {

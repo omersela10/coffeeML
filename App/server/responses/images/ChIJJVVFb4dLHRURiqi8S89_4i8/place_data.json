@@ -6,7 +6,7 @@
             "coffee_type": "cappuccino",
             "crema": "true",
             "served_way": "false",
-            "type_of_cup": "Unknown"
+            "type_of_cup": "true"
         }
     },
     {
@@ -29,7 +29,7 @@
         "prediction": {
             "coffee_type": "cappuccino",
             "crema": "true",
-            "served_way": "false",
+            "served_way": "true",
             "type_of_cup": "true"
         }
     },

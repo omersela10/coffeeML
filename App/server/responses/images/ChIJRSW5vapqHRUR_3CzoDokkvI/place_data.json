@@ -27,8 +27,8 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXVln31iwBKIczVIxrsp2U15O80ERU03tPOqNOEUSXOVtoOMWCHVQphdSQBzTw8B919wzS7IkEp0iSTgBEvkQxbS5fe0NL8CPzsvdTIeu0e3PbudWtMyU9fh6KLWKkgvTplBQO-ooT1_NeEt1Q8mzbYnnHUTeD-O5157pbqhxopje3B6&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJRSW5vapqHRUR_3CzoDokkvI/AUc7tXVln31iwBKIczVIxrsp2U15O80ERU03tPOqNOEUSXOVtoOMWCHVQphdSQBzTw8B919wzS7IkEp0iSTgBEvkQxbS5fe0NL8CPzsvdTIeu0e3PbudWtMyU9fh6KLWKkgvTplBQO-ooT1_NeEt1Q8mzbYnnHUTeD-O5157pbqhxopje3B6.jpg",
         "prediction": {
-            "coffee_type": "cappuccino",
-            "crema": "Unknown",
+            "coffee_type": "espresso",
+            "crema": "true",
             "served_way": "true",
             "type_of_cup": "true"
         }
@@ -51,17 +51,17 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWr2G9Yli2jYjfHvU1NUKfYW0L0CQX7kGR10Lcci_L6K__usPdSAFfDnj5xLnq5lEgBi-XyvD6jrafapCR445LrvdGkDHin9qyEi0qM1IlQTvmK-pGk6sPkdVOTrHfuEx9jcU8Ia2tXGDTDNdstAS3Ii4PShO0Un8fS6EVeYCBH9TIT&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJRSW5vapqHRUR_3CzoDokkvI/AUc7tXWr2G9Yli2jYjfHvU1NUKfYW0L0CQX7kGR10Lcci_L6K__usPdSAFfDnj5xLnq5lEgBi-XyvD6jrafapCR445LrvdGkDHin9qyEi0qM1IlQTvmK-pGk6sPkdVOTrHfuEx9jcU8Ia2tXGDTDNdstAS3Ii4PShO0Un8fS6EVeYCBH9TIT.jpg",
         "prediction": {
-            "coffee_type": "cappuccino",
-            "crema": "true",
-            "served_way": "true",
-            "type_of_cup": "true"
+            "Object_not_detected": "No predictions"
         }
     },
     {
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXUNke2iHcqi5Mf1WlGwa0GC69exWZdNckQ97dOFxFGsoDznQV3A6JRTfAvdVh9uOpGtIBX2HtbGiyDfavkrTtnyII4B3NCz2fG2OrVU37MOX8uyGhGzWg8bbriJgWg9px6Jcg_L2WZZVWOJym91Tqh9v8ae5ik4F7e43lFQeGVRU3aX&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJRSW5vapqHRUR_3CzoDokkvI/AUc7tXUNke2iHcqi5Mf1WlGwa0GC69exWZdNckQ97dOFxFGsoDznQV3A6JRTfAvdVh9uOpGtIBX2HtbGiyDfavkrTtnyII4B3NCz2fG2OrVU37MOX8uyGhGzWg8bbriJgWg9px6Jcg_L2WZZVWOJym91Tqh9v8ae5ik4F7e43lFQeGVRU3aX.jpg",
         "prediction": {
-            "Object_not_detected": "No predictions"
+            "coffee_type": "cappuccino",
+            "crema": "true",
+            "served_way": "true",
+            "type_of_cup": "true"
         }
     },
     {

@@ -66,10 +66,7 @@
         "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXXsbxHUhU70PwaryKJvxte-kGok5boCNxFl9qb9irzFJtO0K_naygC_NzuWugSYdK2andWFnvStjdWL-MBarxfyAp0sHmMilvwp8S1v5KjP2G1QzT06jthRAw6A1GQCWTwIGfMSCBleURYpz-Uq7sDrtCbU_AW-oeNONOK3TK0OJfs&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
         "local_path": "images/ChIJAQBLYo5LHRURJk7CyfQW0z4/AUc7tXXsbxHUhU70PwaryKJvxte-kGok5boCNxFl9qb9irzFJtO0K_naygC_NzuWugSYdK2andWFnvStjdWL-MBarxfyAp0sHmMilvwp8S1v5KjP2G1QzT06jthRAw6A1GQCWTwIGfMSCBleURYpz-Uq7sDrtCbU_AW-oeNONOK3TK0OJfs.jpg",
         "prediction": {
-            "coffee_type": "Unknown",
-            "crema": "Unknown",
-            "served_way": "Unknown",
-            "type_of_cup": "Unknown"
+            "Object_not_detected": "No predictions"
         }
     }
 ]
