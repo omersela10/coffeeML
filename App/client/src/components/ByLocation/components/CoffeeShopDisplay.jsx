@@ -9,7 +9,7 @@ import {
   Badge,
   HStack,
   VStack,
-  SimpleGrid,
+  Grid,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -108,52 +108,52 @@ const CoffeeShopDisplay = ({ shop }) => {
           <Text fontSize="md" color="gray.600" mb={2}>
             Images:
           </Text>
-          <SimpleGrid columns={[2, 3, 8]} spacing={1} overflow="auto" h="300px">
-            {shop.images.map((image, index) => (
-              <Box
-                key={index}
-                borderRadius="md"
-                overflow="hidden"
-                boxSize="150px"
-                position="relative"
-                onClick={() => handleImageClick(image)}
-                cursor="pointer"
-              >
-                {loadingImages[index] && (
-                  <Skeleton boxSize="150px" />
-                )}
-                <Image
-                  src={image.url}
-                  alt={`Image ${index + 1}`}
-                  objectFit="cover"
-                  boxSize="150px"
-                  onLoad={() => handleImageLoad(index)}
-                  display={loadingImages[index] ? "none" : "block"}
-                />
+          <Box overflowX="auto" maxH="300px">
+            <Grid templateColumns="repeat(auto-fill, minmax(150px, 1fr))" gap={2}>
+              {shop.images.map((image, index) => (
                 <Box
-                  position="absolute"
-                  bottom={0}
-                  left={0}
-                  width="100%"
-                  bg="rgba(0, 0, 0, 0.6)"
-                  color="white"
-                  textAlign="center"
-                  py={1}
+                  key={index}
+                  borderRadius="md"
+                  overflow="hidden"
+                  position="relative"
+                  onClick={() => handleImageClick(image)}
+                  cursor="pointer"
+                  boxSize="150px"
                 >
-                  <HStack justify="space-between" px={2}>
-                    <Text fontSize="sm" justifyContent="center" display="flex" alignItems="center">
-                      <Icon as={BsFillStarFill} color="yellow.400" mr={2} />
-                      {image.quality + 2}
-                    </Text>
-                    <Icon
-                      as={image.is_matched ? MdVerified : MdClose}
-                      color={image.is_matched ? "green.400" : "red.400"}
-                    />
-                  </HStack>
+                  {loadingImages[index] && <Skeleton boxSize="150px" />}
+                  <Image
+                    src={image.url}
+                    alt={`Image ${index + 1}`}
+                    objectFit="cover"
+                    boxSize="150px"
+                    onLoad={() => handleImageLoad(index)}
+                    display={loadingImages[index] ? "none" : "block"}
+                  />
+                  <Box
+                    position="absolute"
+                    bottom={0}
+                    left={0}
+                    width="100%"
+                    bg="rgba(0, 0, 0, 0.6)"
+                    color="white"
+                    textAlign="center"
+                    py={1}
+                  >
+                    <HStack justify="space-between" px={2}>
+                      <Text fontSize="sm" display="flex" alignItems="center">
+                        <Icon as={BsFillStarFill} color="yellow.400" mr={2} />
+                        {image.quality + 2}
+                      </Text>
+                      <Icon
+                        as={image.is_matched ? MdVerified : MdClose}
+                        color={image.is_matched ? "green.400" : "red.400"}
+                      />
+                    </HStack>
+                  </Box>
                 </Box>
-              </Box>
-            ))}
-          </SimpleGrid>
+              ))}
+            </Grid>
+          </Box>
         </Box>
 
         <Modal isOpen={isOpen} onClose={onClose}>

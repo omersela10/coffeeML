@@ -1,9 +1,10 @@
 import React from "react";
-import { Box, VStack, Text, Divider } from "@chakra-ui/react";
+import { Box, VStack, Text } from "@chakra-ui/react";
 import CoffeeChoiceSection from "../shared_components/CoffeChoiceSelection/CoffeeChoiceSelection";
 import { bgPrimaryColor, borderRadius } from "../../assets/theme";
 
 const LeftSidebar = ({ userChoices, setUserChoices, isDisabled }) => {
+
   return (
     <Box
       position="relative"
@@ -35,16 +36,22 @@ const LeftSidebar = ({ userChoices, setUserChoices, isDisabled }) => {
         <Text fontSize="lg" fontWeight="bold" mb={2}>
           User Choices
         </Text>
-        {Object.keys(userChoices).map((key) => (
-          <Box key={key} display="flex" justifyContent="space-between" mb={2}>
-            <Text fontWeight="medium" color="gray.600">
-              {key.replace(/_/g, " ")}:
-            </Text>
-            <Text fontWeight="bold" color="gray.800">
-              {String(userChoices[key])}
-            </Text>
-          </Box>
-        ))}
+        <Box display="flex" justifyContent="space-between" mb={2}>
+          <Text fontWeight="medium" color="gray.600">
+            Coffee Type:
+          </Text>
+          <Text fontWeight="bold" color="gray.800">
+            {userChoices.coffee_type}
+          </Text>
+        </Box>
+        <Box display="flex" justifyContent="space-between" mb={2}>
+          <Text fontWeight="medium" color="gray.600">
+            Cup Type:
+          </Text>
+          <Text fontWeight="bold" color="gray.800">
+            {userChoices.type_of_cup ? "Dine-In" : "Take-Away"}
+          </Text>
+        </Box>
       </Box>
     </Box>
   );
