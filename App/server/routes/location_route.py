@@ -4,22 +4,12 @@ import requests
 import json 
 from flask import send_file
 from flask_cors import cross_origin
-
+from helpers.coffee_helpers import coffee_quality
+import time
 location_bp = Blueprint('location_bp', __name__)
 
-@location_bp.route("/get_coffee_shops_by_location", methods=["GET"])
-@cross_origin()
-def get_coffee_shops_by_location():
-    city = request.args.get("city")
-    # return get_real_coffee_shops_by_location(city)
-    return get_fake_coffee_shops_by_location(city)
 
-@location_bp.route("/get_images_by_place_id", methods=["GET"])
-@cross_origin()
-def get_images_by_place_id():
-    place_id = request.args.get("place_id")
-    # return get_real_images_by_place_id(place_id)
-    return get_fake_images_by_place_id(place_id)
+
 
 @location_bp.route("/download_image", methods=["GET"])
 @cross_origin()
@@ -38,8 +28,58 @@ def get_locations():
         return jsonify(json_files)
     else:
         return jsonify({"error": "responses folder not found"}), 404
+    
 
-# Helper functions  to get real and fake data
+@location_bp.route("/get_location_results", methods=["POST"])
+@cross_origin()
+def get_location_results():
+    time.sleep(1)
+    request_data = request.get_json()
+    location = request_data.get("location")
+    user_choices = request_data.get("userChoices")
+    if not location:
+        return jsonify({"error": "Location parameter is required"}), 400
+
+    json_file_path = os.path.join("responses", f"get_coffee_shops_{location}.json")
+    coffee_shops = json.load(open(json_file_path))
+    if not os.path.exists(json_file_path):
+        return jsonify({"error": "Invalid location"}), 400
+    for place in coffee_shops:
+        place_id = place["place_id"]
+        is_matched = False
+        max_quality = 0
+        images = []
+        place_data_json = os.path.join("responses", "images", place_id, f"place_data.json")
+        with open(place_data_json, "r") as json_file:
+            for image in json.load(json_file):
+                if image["prediction"].get("Object_not_detected", False):
+                    continue
+                else: # if image is detected:
+                    is_matched_image = True
+                    quality_image = 0
+                    keys = user_choices.keys()
+                    for key in keys:
+                        if str(image["prediction"][key]).lower() != str(user_choices[key]).lower():
+                            is_matched_image = False
+                            break
+                    if is_matched_image:
+                        is_matched = True
+
+                    quality_image = coffee_quality(image["prediction"])
+                    if quality_image > max_quality:
+                        max_quality = quality_image
+
+                    image_content = { "is_matched": is_matched_image, "quality": quality_image, "url": image["image_url"]}
+                    images.append(image_content)
+                    
+
+        place["is_matched"] = is_matched
+        place["quality"] = max_quality
+        place["images"] = images
+    return jsonify(coffee_shops)
+
+
+# ---------------------------------  Helper functions  to get real and fake data -----------------------------------
 def get_real_coffee_shops_by_location(city):
     config_json = json.load(open("config.json"))
     GOOGLE_API_KEY = config_json["GOOGLE_API_KEY"]
@@ -63,73 +103,4 @@ def get_real_coffee_shops_by_location(city):
 
     coffee_shops = places_response.get("results", [])
     return jsonify(coffee_shops)
-
-def get_fake_coffee_shops_by_location(city):
-    print(os.getcwd())
-    if city == "tel aviv":
-        json_file_path = os.path.join("responses", "get_coffee_shops_tel_aviv.json")
-    elif city == "netanya":
-        json_file_path = os.path.join("responses", "get_coffee_shops_netanya.json")
-    else:
-        return jsonify({"error": "Invalid city"}), 400
-    return json.load(open(json_file_path))
-
-def get_real_images_by_place_id(place_id):
-    config_json = json.load(open("config.json"))
-    GOOGLE_API_KEY = config_json["GOOGLE_API_KEY"]
-    if not place_id:
-        return jsonify({"error": "Place ID parameter is required"}), 400
-
-    details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&key={GOOGLE_API_KEY}"
-    details_response = requests.get(details_url).json()
-
-    if details_response["status"] != "OK":
-        return jsonify({"error": "Error fetching place details"}), 400
-
-    place_details = details_response.get("result", {})
-    photos = place_details.get("photos", [])
-
-    if not photos:
-        return jsonify({"error": "No photos available for this place"}), 400
-
-    image_data = []
-
-    # Ensure the directory for the place_id exists
-    place_dir = os.path.join("images", place_id)
-    if not os.path.exists(place_dir):
-        os.makedirs(place_dir)
-
-    for photo in photos:
-        photo_reference = photo["photo_reference"]
-        photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference={photo_reference}&key={GOOGLE_API_KEY}"
-        image_response = requests.get(photo_url)
-
-        if image_response.status_code == 200:
-            image_path = os.path.join(place_dir, f"{photo_reference}.jpg")
-            with open(image_path, "wb") as img_file:
-                img_file.write(image_response.content)
-            image_data.append({
-                "image_url": photo_url,
-                "local_path": image_path
-            })
-
-    # Save the image data (URLs and local paths) to a JSON file
-    json_file_path = os.path.join(place_dir, f"{place_id}.json")
-    with open(json_file_path, "w") as json_file:
-        json.dump(image_data, json_file)
-
-    return jsonify(image_data)
-
-
-
-def get_fake_images_by_place_id(place_id):
-    if not place_id:
-        return jsonify({"error": "Place ID parameter is required"}), 400
-
-    json_file_path = os.path.join("responses", "images", place_id + f"/{place_id}.json")
-    print(json_file_path)
-    if not os.path.exists(json_file_path):
-        return jsonify({"error": "No images available for this place"}), 400
-
-    return json.load(open(json_file_path))
 

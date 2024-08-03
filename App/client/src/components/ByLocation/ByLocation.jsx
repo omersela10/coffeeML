@@ -7,9 +7,9 @@ const ByLocation = ({ locationsOptions , setSelectedLocation }) => {
         <Container maxW="container.xl" mt={4}>
         <Flex direction="column" height="80vh">
           <Text fontSize="2xl" mb={4}>
-            Where do you want to drink your coffee?
+            Where do you drink your coffee?
           </Text>
-            <Text fontSize="lg" mb={4}>
+            <Text fontSize="lg" mb={4} color="gray.600">
                 Choose a location
             </Text>
           <Box flex="1" overflowY="auto">
