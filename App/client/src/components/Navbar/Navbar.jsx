@@ -24,21 +24,19 @@ const Navbar = ({ links }) => {
         <Flex alignItems={"center"}>
           <Divider orientation="vertical" h={6} mx={2} />
           {links.map((link) => (
-            <>
-
-            <Link
-              as={RouterLink}
-              to={link.to}
-              px={2}
-              color={location.pathname === link.to ? activeColor : "white"}
-              fontWeight={location.pathname === link.to ? "bold" : "normal"}
-              _hover={{ textDecoration: "none", color: "gray.100" }}
-              key={link.to}
-            >
-              {link.label}
-            </Link>
-          <Divider orientation="vertical" h={6} mx={2} />
-            </>
+            <Box key={link.to} display="flex" alignItems="center">
+              <Link
+                as={RouterLink}
+                to={link.to}
+                px={2}
+                color={location.pathname === link.to ? activeColor : "white"}
+                fontWeight={location.pathname === link.to ? "bold" : "normal"}
+                _hover={{ textDecoration: "none", color: "gray.100" }}
+              >
+                {link.label}
+              </Link>
+              <Divider orientation="vertical" h={6} mx={2} />
+            </Box>
           ))}
         </Flex>
       </Flex>

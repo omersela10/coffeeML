@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import ColorAnimated from "../../shared_components/ColorAnimated";
 
 const WelcomeText = ({ heading, subheading }) => {
@@ -11,7 +11,7 @@ const WelcomeText = ({ heading, subheading }) => {
       fontWeight: "bold",
     },
     description: {
-      colors: ["#6F3D12", "#CFAE7D"], 
+      colors: ["#6F3D12", "#CFAE7D"],
 
       fontSize: "xl",
       fontFamily: "Plus Jakarta Sans Variable",

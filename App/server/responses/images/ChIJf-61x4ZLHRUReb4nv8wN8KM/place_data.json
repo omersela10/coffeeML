@@ -1,0 +1,78 @@
+[
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWSljvJw6ROBd3Sp-XFqF-IFqRh3EmGcSqXFV_NGu4OARnTaigKEMLvOfHV0dKv8Ojl-QRtL_-tCqt_Hes5vOwEICSesQlJ-_D6J5J2_GIbPFa7uWmg23JK5JdSj49FKWt9C5Nf1YIB5AkZ2Iex0bjoutHgGUmuVkxNr1qSeVRwxsA_&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXWSljvJw6ROBd3Sp-XFqF-IFqRh3EmGcSqXFV_NGu4OARnTaigKEMLvOfHV0dKv8Ojl-QRtL_-tCqt_Hes5vOwEICSesQlJ-_D6J5J2_GIbPFa7uWmg23JK5JdSj49FKWt9C5Nf1YIB5AkZ2Iex0bjoutHgGUmuVkxNr1qSeVRwxsA_.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWtG_7qRLBNmwyUF84gdTaETiLLOmKPxwu5NncGra0ItK9LfYXYamN5GFj_qeRtHYMyE9Xx_o8_CrKgT3hlgD-wC3QM2n2Pz38ZIIQgUh2LJU9J5PpZELyBKOCckE5g4W5PFq47qeStnbUnv3HMpRNjRciSSf4BDjhD6B9un3w3pp19&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXWtG_7qRLBNmwyUF84gdTaETiLLOmKPxwu5NncGra0ItK9LfYXYamN5GFj_qeRtHYMyE9Xx_o8_CrKgT3hlgD-wC3QM2n2Pz38ZIIQgUh2LJU9J5PpZELyBKOCckE5g4W5PFq47qeStnbUnv3HMpRNjRciSSf4BDjhD6B9un3w3pp19.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXVAZlmlypzTwdXXCXwebk_NQrkjMTraBu7LWYvs5vD3a7V9bd4MqyVXsX56c_iYD6g-o8R0M6ctaP417q16ro0HVf5N3utaELgXLzY4mYGwC0_DcNnH_scxO_0MTb5MfrvxROfElzIV66CIx0N2fdpJC6oBVMUQ439qOWui01IV_iZ6&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXVAZlmlypzTwdXXCXwebk_NQrkjMTraBu7LWYvs5vD3a7V9bd4MqyVXsX56c_iYD6g-o8R0M6ctaP417q16ro0HVf5N3utaELgXLzY4mYGwC0_DcNnH_scxO_0MTb5MfrvxROfElzIV66CIx0N2fdpJC6oBVMUQ439qOWui01IV_iZ6.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXWrJV5y5HuSQTGqtBApWn4ksapz-YOtPPf4y5a7Ea-IInEkBVRJ7_nwwK8t0QyKzQ7F8aHCgZC-MbKSDbG93kikbxXeVM3ksA7VDGDfcbrKPk7EpsT5fZIOJYSW6mVPrW1jLNduT08XJJQKaLfUW6xvAScXVBWPfTyZEc4HGisnUhkw&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXWrJV5y5HuSQTGqtBApWn4ksapz-YOtPPf4y5a7Ea-IInEkBVRJ7_nwwK8t0QyKzQ7F8aHCgZC-MbKSDbG93kikbxXeVM3ksA7VDGDfcbrKPk7EpsT5fZIOJYSW6mVPrW1jLNduT08XJJQKaLfUW6xvAScXVBWPfTyZEc4HGisnUhkw.jpg",
+        "prediction": {
+            "coffee_type": "espresso",
+            "crema": "false",
+            "served_way": "false",
+            "type_of_cup": "true"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXUZfSMmsT1DapGRKDGI0txQVBEtR4RtFE6nx37nLi5OlGRQLHw7hZsSPZppukX03nPxWvJvrH_823gCyX4ESeZcRnwrb25JpLOF-x79vuq6jwpjvZMSNs40o2IPMhJVivx9pktfNq1tPw__0wmNxivvvRDCmRQhiHi29SroipiC9mY&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXUZfSMmsT1DapGRKDGI0txQVBEtR4RtFE6nx37nLi5OlGRQLHw7hZsSPZppukX03nPxWvJvrH_823gCyX4ESeZcRnwrb25JpLOF-x79vuq6jwpjvZMSNs40o2IPMhJVivx9pktfNq1tPw__0wmNxivvvRDCmRQhiHi29SroipiC9mY.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXXowINR9tv23IABUEWPz-VvciAf4bRC117tG_t8xAhBBbg9SR9qVnuUwJiJQQNdVMbJsgB0gV9_6ZTYrN1Rmt4JtKUcpQ_yKCNIvBDjmWsW_nwBFMkesTe4Jm-Oj904WshpRDBMPXS5ibArgNV0wBv-XBSHMzqyGSiHL-YTAj-th9f2&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXXowINR9tv23IABUEWPz-VvciAf4bRC117tG_t8xAhBBbg9SR9qVnuUwJiJQQNdVMbJsgB0gV9_6ZTYrN1Rmt4JtKUcpQ_yKCNIvBDjmWsW_nwBFMkesTe4Jm-Oj904WshpRDBMPXS5ibArgNV0wBv-XBSHMzqyGSiHL-YTAj-th9f2.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXViUgmlqPZ1KMrsYA5gk_KYcW4WjYLUi_uJF-GdB5ASeltuae3Xi8OT2mFcBJGFShcC0VU5UvUAEAJ4FRiRpQHH-nrd3jVDCIGpJcfU7ikFSAFJJ6JQYE8WcGLggmJPhxB6_fmk0d0qFYNThce1N2kUYI1JALKyMj_wg_xffz3KcZhC&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXViUgmlqPZ1KMrsYA5gk_KYcW4WjYLUi_uJF-GdB5ASeltuae3Xi8OT2mFcBJGFShcC0VU5UvUAEAJ4FRiRpQHH-nrd3jVDCIGpJcfU7ikFSAFJJ6JQYE8WcGLggmJPhxB6_fmk0d0qFYNThce1N2kUYI1JALKyMj_wg_xffz3KcZhC.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXU0eZa6GX8oGjKVHlGtkfnhMoppUkU9N6nXuLbskMujxmESDxamVY7v_9TkDcEfElKg0YriwwQ_E2wDOFRUpSaklbPJl-OVfgmWMAaigmFV96QewSaRAXjCDbnCihRQatBDYvqwlpQy40hPGH0LRxyI-DCTOb7811jxrbBGf6whpG0H&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXU0eZa6GX8oGjKVHlGtkfnhMoppUkU9N6nXuLbskMujxmESDxamVY7v_9TkDcEfElKg0YriwwQ_E2wDOFRUpSaklbPJl-OVfgmWMAaigmFV96QewSaRAXjCDbnCihRQatBDYvqwlpQy40hPGH0LRxyI-DCTOb7811jxrbBGf6whpG0H.jpg",
+        "prediction": {
+            "coffee_type": "cappuccino",
+            "crema": "true",
+            "served_way": "false",
+            "type_of_cup": "true"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXVQIAgJ1Qpfas45eJyGY7eE3PSPFzXEvCs0ZhcYmzi0VbRLnTnFumKQN3P8fowpIuTYo9SYg8xc5M20MohXhtfORsdZegDXyk7X0gd9SC29yoTKBpN-ovItYFwOuFf9sb8zt-k29PLhLD7y8MXjmnT4ZpiYsGFKmccSYCrqP75XBmMm&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXVQIAgJ1Qpfas45eJyGY7eE3PSPFzXEvCs0ZhcYmzi0VbRLnTnFumKQN3P8fowpIuTYo9SYg8xc5M20MohXhtfORsdZegDXyk7X0gd9SC29yoTKBpN-ovItYFwOuFf9sb8zt-k29PLhLD7y8MXjmnT4ZpiYsGFKmccSYCrqP75XBmMm.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    },
+    {
+        "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AUc7tXXsA3QbN6jG0JYnHWbxN_kCHafaigMyFMsyYleVUHGkrjMbk_uLykRjz5-mIzrg_xZ_AvckgwWvtRBJax1ircg5dA70sNmTCOpPdClS_X5s_Tk4Wn6CfUbAYEVUmNj6vmuPExyydNSwkywOWJFPyH2SGh9LiOilOAgzl5JEDaR5OEe7&key=AIzaSyDWrZOAoDBUSKdJzGkZcC9ydKcEseHha3s",
+        "local_path": "images/ChIJf-61x4ZLHRUReb4nv8wN8KM/AUc7tXXsA3QbN6jG0JYnHWbxN_kCHafaigMyFMsyYleVUHGkrjMbk_uLykRjz5-mIzrg_xZ_AvckgwWvtRBJax1ircg5dA70sNmTCOpPdClS_X5s_Tk4Wn6CfUbAYEVUmNj6vmuPExyydNSwkywOWJFPyH2SGh9LiOilOAgzl5JEDaR5OEe7.jpg",
+        "prediction": {
+            "Object_not_detected": "No predictions"
+        }
+    }
+]

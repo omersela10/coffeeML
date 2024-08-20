@@ -2,7 +2,7 @@
     "clasifications": 
     [
         {
-            "classification_name": "coffe_type",
+            "classification_name": "coffee_type",
             "model_path": "resources\\MLmodels\\coffee_type_classification\\coffee_type_classification_v1.pt",
             "class_labels": [
                 "cappuccino",
@@ -14,24 +14,24 @@
             "classification_name": "crema",
             "model_path": "resources\\MLmodels\\crema_classification\\crema_classification_v1.pt",
             "class_labels": [
-                "no_crema",
-                "crema"
+                "false",
+                "true"
             ]
         },
         {
             "classification_name": "served_way",
             "model_path": "resources\\MLmodels\\served_way_classification\\served_way_classification_v1.pt",
             "class_labels": [
-                "no_served_way",
-                "yes_served_way"
+                "false",
+                "true"
             ]
         },
         {
             "classification_name": "type_of_cup",
             "model_path": "resources\\MLmodels\\type_of_cup_classification\\type_of_cup_classification_v1.pt",
             "class_labels": [
-                "take_away_cup",
-                "cup"
+                "false",
+                "true"
             ]
         }
     ],
